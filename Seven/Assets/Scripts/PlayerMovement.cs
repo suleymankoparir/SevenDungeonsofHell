@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        //4 Way Movement
+        /*
         if (Mathf.Abs(joystick.Direction.x) > Mathf.Abs(joystick.Direction.y))
         {
             movement.x = joystick.Direction.x;
@@ -27,6 +29,11 @@ public class PlayerMovement : MonoBehaviour
             movement.x = 0;
             movement.y = joystick.Direction.y;
         }
+        */
+        //8 Way Movement
+        movement.x = joystick.Direction.x;
+        movement.y = joystick.Direction.y;
+        ////////////////
         anim.SetFloat("Horizontal", movement.x);
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);
