@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     Animator anim;
     public LayerMask obstacleLayer;
     public float sightDistance = 50;
+    public bool takeHitAnimation=false;
     void Start()
     {
         currentHealth = maxHealth;
@@ -32,6 +33,8 @@ public class Enemy : MonoBehaviour
     public void takeDamage(int damage)
     {
         currentHealth -= damage;
+        if(takeHitAnimation)
+            anim.SetTrigger("TakeHit");
         if (currentHealth <= 0)
         {
             Die();

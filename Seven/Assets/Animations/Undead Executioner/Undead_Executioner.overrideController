@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Undead_Executioner
+  m_Controller: {fileID: 9100000, guid: a59489117c521344e9b3ab178d0d333f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 215bc97d3fcca4241983dca01e82fea2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e8987b1bbd5deef488e1d11e34b380e6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a604c3979604acd4dba7f85f29e07f2f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 23cf2509514209b468511b1fd3f170f1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e99263819902bf840985dd94330efb62, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8e78afdcf22161b45a58fccb41f35de2, type: 2}
