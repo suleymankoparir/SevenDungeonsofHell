@@ -124,6 +124,7 @@ MonoBehaviour:
     m_Bits: 0
   sightDistance: 50
   takeHitAnimation: 1
+  walkAnimation: 1
 --- !u!50 &2213234341103075629
 Rigidbody2D:
   serializedVersion: 4

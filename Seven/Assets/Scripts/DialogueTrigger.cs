@@ -29,9 +29,9 @@ public class DialogueTrigger : MonoBehaviour
         Control.SetActive(true);
         joystick.enabled = true;
     }
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
-       
+        Gizmos.color = Color.green;
         Gizmos.DrawWireCube(this.gameObject.transform.position, new Vector3(this.gameObject.GetComponent<BoxCollider2D>().size.x, this.gameObject.GetComponent<BoxCollider2D>().size.y, 0));
     }
 }
