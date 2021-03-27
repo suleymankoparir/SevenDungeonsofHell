@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     public Joystick joystick;
     Vector2 movement;
+    public float minMovement = 0.3f;
     void Start()
     {
         rigid = this.gameObject.GetComponent<Rigidbody2D>();
@@ -17,23 +18,17 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        //4 Way Movement
-        /*
-        if (Mathf.Abs(joystick.Direction.x) > Mathf.Abs(joystick.Direction.y))
+        if (joystick.isActiveAndEnabled&&(Mathf.Abs(joystick.Direction.x)>minMovement|| Mathf.Abs(joystick.Direction.y)>minMovement))
         {
             movement.x = joystick.Direction.x;
-            movement.y = 0;
+            movement.y = joystick.Direction.y;
         }
         else
         {
             movement.x = 0;
-            movement.y = joystick.Direction.y;
+            movement.y = 0;
         }
-        */
-        //8 Way Movement
-        movement.x = joystick.Direction.x;
-        movement.y = joystick.Direction.y;
-        ////////////////
+
         anim.SetFloat("Horizontal", movement.x);
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);

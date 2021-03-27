@@ -11,11 +11,13 @@ public class Enemy : MonoBehaviour
     public LayerMask obstacleLayer;
     public float sightDistance = 50;
     public bool takeHitAnimation=false;
+    public bool walkAnimation = false;
     void Start()
     {
         currentHealth = maxHealth;
         anim = this.gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        anim.SetBool("TakeHitAnimation", takeHitAnimation);
     }
 
     private void FixedUpdate()
