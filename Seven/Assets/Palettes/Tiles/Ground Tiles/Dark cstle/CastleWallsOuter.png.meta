@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: a2365a28702f3435dbf6a9d638404510
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5242492986720132556
+    second: CastleWallsOuter_0
+  - first:
+      213: 7933691546939203130
+    second: CastleWallsOuter_1
+  - first:
+      213: -2971429327528478560
+    second: CastleWallsOuter_2
+  - first:
+      213: 6489355134609346098
+    second: CastleWallsOuter_3
+  - first:
+      213: -4074902438104890200
+    second: CastleWallsOuter_4
+  - first:
+      213: -7600011510136650687
+    second: CastleWallsOuter_5
+  - first:
+      213: 1865284003418474522
+    second: CastleWallsOuter_6
+  - first:
+      213: 6110785199067461916
+    second: CastleWallsOuter_7
+  - first:
+      213: -5185470575209808885
+    second: CastleWallsOuter_8
+  - first:
+      213: 7932709783082786685
+    second: CastleWallsOuter_9
+  - first:
+      213: 7068610177938255465
+    second: CastleWallsOuter_10
+  - first:
+      213: 4419164013694043915
+    second: CastleWallsOuter_11
+  - first:
+      213: -3607212004366155177
+    second: CastleWallsOuter_12
+  - first:
+      213: 8410401504535226572
+    second: CastleWallsOuter_13
+  - first:
+      213: -6083938358968812742
+    second: CastleWallsOuter_14
+  - first:
+      213: -3698673417357844841
+    second: CastleWallsOuter_15
+  - first:
+      213: 7892575739906781658
+    second: CastleWallsOuter_16
+  - first:
+      213: 5927412693373885345
+    second: CastleWallsOuter_17
+  - first:
+      213: -3920111444233782427
+    second: CastleWallsOuter_18
+  - first:
+      213: -503601382887043448
+    second: CastleWallsOuter_19
+  - first:
+      213: -8861928855148603362
+    second: CastleWallsOuter_20
+  - first:
+      213: -7444247188359714439
+    second: CastleWallsOuter_21
+  - first:
+      213: 7477068139286916477
+    second: CastleWallsOuter_22
+  - first:
+      213: 8107723381793894690
+    second: CastleWallsOuter_23
+  - first:
+      213: -4340951356103873918
+    second: CastleWallsOuter_24
+  - first:
+      213: 4650358041143509486
+    second: CastleWallsOuter_25
+  - first:
+      213: 868144043238665469
+    second: CastleWallsOuter_26
+  - first:
+      213: -3341069381584344504
+    second: CastleWallsOuter_27
+  - first:
+      213: 3700628965758869811
+    second: CastleWallsOuter_28
+  - first:
+      213: 7299483423449691117
+    second: CastleWallsOuter_29
+  - first:
+      213: 9069748638715105221
+    second: CastleWallsOuter_30
+  - first:
+      213: 5849525435404588742
+    second: CastleWallsOuter_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CastleWallsOuter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432e11d876cee37b0800000000000000
+      internalID: -5242492986720132556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsOuter_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e94dc6d622a1e60800000000000000
+      internalID: 7933691546939203130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsOuter_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8bc7915cc53c6d0800000000000000
+      internalID: -2971429327528478560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsOuter_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e4fb3ec12de0a50800000000000000
+      internalID: 6489355134609346098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsOuter_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4826282d90377c0800000000000000
+      internalID: -4074902438104890200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsOuter_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144cc615cc5578690800000000000000
+      internalID: -7600011510136650687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsOuter_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a180afc1be1d2e910800000000000000
+      internalID: 1865284003418474522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsOuter_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19712123ceddc450800000000000000
+      internalID: 6110785199067461916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleWallsOuter_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0cf0635cf18908b0800000000000000
+      internalID: -5185470575209808885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

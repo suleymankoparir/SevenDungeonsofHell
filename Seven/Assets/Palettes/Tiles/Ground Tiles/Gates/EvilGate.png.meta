@@ -1,0 +1,948 @@
+fileFormatVersion: 2
+guid: 6b1b665a9d3514bb1944e7affd7a947b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -990307813168490166
+    second: EvilGate_0
+  - first:
+      213: 7684458081287970917
+    second: EvilGate_1
+  - first:
+      213: 7701292921673770998
+    second: EvilGate_2
+  - first:
+      213: -7528756087503089152
+    second: EvilGate_3
+  - first:
+      213: 8792713979250718811
+    second: EvilGate_4
+  - first:
+      213: -6830998793177338676
+    second: EvilGate_5
+  - first:
+      213: -555528183106092183
+    second: EvilGate_6
+  - first:
+      213: 5172899708857207244
+    second: EvilGate_7
+  - first:
+      213: 6389700754352193639
+    second: EvilGate_8
+  - first:
+      213: -8454376204173307840
+    second: EvilGate_9
+  - first:
+      213: -6676496755793277813
+    second: EvilGate_10
+  - first:
+      213: 2155386290218513959
+    second: EvilGate_11
+  - first:
+      213: -2336003652928157496
+    second: EvilGate_12
+  - first:
+      213: 7060169512068753061
+    second: EvilGate_13
+  - first:
+      213: -2215072792895796527
+    second: EvilGate_14
+  - first:
+      213: 7673741386671463976
+    second: EvilGate_15
+  - first:
+      213: -192987329904809745
+    second: EvilGate_16
+  - first:
+      213: 536066251675834696
+    second: EvilGate_17
+  - first:
+      213: -5688462986076377862
+    second: EvilGate_18
+  - first:
+      213: 5566333575216820709
+    second: EvilGate_19
+  - first:
+      213: 3909433779936847549
+    second: EvilGate_20
+  - first:
+      213: -5055634984352988022
+    second: EvilGate_21
+  - first:
+      213: 6642768328172095367
+    second: EvilGate_22
+  - first:
+      213: -7036554668190629527
+    second: EvilGate_23
+  - first:
+      213: -3576162716698697249
+    second: EvilGate_24
+  - first:
+      213: 2864428044815751687
+    second: EvilGate_25
+  - first:
+      213: 238835428526309525
+    second: EvilGate_26
+  - first:
+      213: 2809144056316408769
+    second: EvilGate_27
+  - first:
+      213: -6185715554186495517
+    second: EvilGate_28
+  - first:
+      213: -7416382205089554682
+    second: EvilGate_29
+  - first:
+      213: -2755311917407880069
+    second: EvilGate_30
+  - first:
+      213: -5819498007446455901
+    second: EvilGate_31
+  - first:
+      213: -4308327680313811639
+    second: EvilGate_32
+  - first:
+      213: 4300234816305320608
+    second: EvilGate_33
+  - first:
+      213: 2415826028010719518
+    second: EvilGate_34
+  - first:
+      213: -4039009001705862016
+    second: EvilGate_35
+  - first:
+      213: 8690141937264578084
+    second: EvilGate_36
+  - first:
+      213: -915144499895471470
+    second: EvilGate_37
+  - first:
+      213: 6408312720362023379
+    second: EvilGate_38
+  - first:
+      213: 6700868065498406597
+    second: EvilGate_39
+  - first:
+      213: 9204702488666007655
+    second: EvilGate_40
+  - first:
+      213: -6523161720908561912
+    second: EvilGate_41
+  - first:
+      213: 330279442427008306
+    second: EvilGate_42
+  - first:
+      213: -6049368643437869514
+    second: EvilGate_43
+  - first:
+      213: 1238506193073918956
+    second: EvilGate_44
+  - first:
+      213: 1053847328711481334
+    second: EvilGate_45
+  - first:
+      213: 1511032068810575453
+    second: EvilGate_46
+  - first:
+      213: 2104841287094759172
+    second: EvilGate_47
+  - first:
+      213: 6945869995720591831
+    second: EvilGate_48
+  - first:
+      213: 6629825091045805284
+    second: EvilGate_49
+  - first:
+      213: 828126237096145820
+    second: EvilGate_50
+  - first:
+      213: -2616254451542458126
+    second: EvilGate_51
+  - first:
+      213: -2773716707243717908
+    second: EvilGate_52
+  - first:
+      213: 5706778821392978555
+    second: EvilGate_53
+  - first:
+      213: 1866306329273803647
+    second: EvilGate_54
+  - first:
+      213: 5357181418897307199
+    second: EvilGate_55
+  - first:
+      213: -1014934656399867026
+    second: EvilGate_56
+  - first:
+      213: 5947047216484448580
+    second: EvilGate_57
+  - first:
+      213: 6475440606533332748
+    second: EvilGate_58
+  - first:
+      213: 4727349171338089619
+    second: EvilGate_59
+  - first:
+      213: -66751649221562021
+    second: EvilGate_60
+  - first:
+      213: -9013510507287442796
+    second: EvilGate_61
+  - first:
+      213: 392064701428162074
+    second: EvilGate_62
+  - first:
+      213: -8823813900145186064
+    second: EvilGate_63
+  - first:
+      213: 7916845422840353060
+    second: EvilGate_64
+  - first:
+      213: 5487891705625920060
+    second: EvilGate_65
+  - first:
+      213: 8869734491300710904
+    second: EvilGate_66
+  - first:
+      213: 2208041283286562940
+    second: EvilGate_67
+  - first:
+      213: -8115841336403618525
+    second: EvilGate_68
+  - first:
+      213: 3743849566088222291
+    second: EvilGate_69
+  - first:
+      213: 6810872461229738352
+    second: EvilGate_70
+  - first:
+      213: -8149129462935354181
+    second: EvilGate_71
+  - first:
+      213: -8077134527592082999
+    second: EvilGate_72
+  - first:
+      213: 3804611223990972499
+    second: EvilGate_73
+  - first:
+      213: -5808882348885069915
+    second: EvilGate_74
+  - first:
+      213: -3365638538735235578
+    second: EvilGate_75
+  - first:
+      213: 831540525082746242
+    second: EvilGate_76
+  - first:
+      213: -5581857759990328937
+    second: EvilGate_77
+  - first:
+      213: -5849076259256718406
+    second: EvilGate_78
+  - first:
+      213: -6674462693000597047
+    second: EvilGate_79
+  - first:
+      213: -4512486192681027093
+    second: EvilGate_80
+  - first:
+      213: -6503057603494532212
+    second: EvilGate_81
+  - first:
+      213: -2858275752088124882
+    second: EvilGate_82
+  - first:
+      213: 118053968335185607
+    second: EvilGate_83
+  - first:
+      213: 631633480771511262
+    second: EvilGate_84
+  - first:
+      213: -6660891529719461322
+    second: EvilGate_85
+  - first:
+      213: -3467776307767740708
+    second: EvilGate_86
+  - first:
+      213: 1346504172785783154
+    second: EvilGate_87
+  - first:
+      213: 8326973871028693440
+    second: EvilGate_88
+  - first:
+      213: -2933997984994163592
+    second: EvilGate_89
+  - first:
+      213: -7571463339285373445
+    second: EvilGate_90
+  - first:
+      213: 8058138271013620561
+    second: EvilGate_91
+  - first:
+      213: -1142540107035614976
+    second: EvilGate_92
+  - first:
+      213: 3494841246443877366
+    second: EvilGate_93
+  - first:
+      213: 389346639427681797
+    second: EvilGate_94
+  - first:
+      213: 1913501079415114793
+    second: EvilGate_95
+  - first:
+      213: -7646224180551881560
+    second: EvilGate_96
+  - first:
+      213: 6925750349079132887
+    second: EvilGate_97
+  - first:
+      213: 7535432881861538543
+    second: EvilGate_98
+  - first:
+      213: -3500236639572929842
+    second: EvilGate_99
+  - first:
+      213: 2305315951445424495
+    second: EvilGate_100
+  - first:
+      213: -157433672279581680
+    second: EvilGate_101
+  - first:
+      213: 5002823128328590377
+    second: EvilGate_102
+  - first:
+      213: 1516369476766023784
+    second: EvilGate_103
+  - first:
+      213: 5794153840709311781
+    second: EvilGate_104
+  - first:
+      213: -4780101924798717217
+    second: EvilGate_105
+  - first:
+      213: -2950159406546912443
+    second: EvilGate_106
+  - first:
+      213: 4808280847935135529
+    second: EvilGate_107
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EvilGate_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a495cc17a48b142f0800000000000000
+      internalID: -990307813168490166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560ac8239eda4aa60800000000000000
+      internalID: 7684458081287970917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7689beb1d70ea60800000000000000
+      internalID: 7701292921673770998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00291db3a3c748790800000000000000
+      internalID: -7528756087503089152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58b9d047cef50a70800000000000000
+      internalID: 8792713979250718811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cccea8f2aca6331a0800000000000000
+      internalID: -6830998793177338676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9634e3f8f0e5a48f0800000000000000
+      internalID: -555528183106092183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9c725c0e4d9c740800000000000000
+      internalID: 5172899708857207244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76045346bf6cca850800000000000000
+      internalID: 6389700754352193639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0401cb0b2a50caa80800000000000000
+      internalID: -8454376204173307840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8cc4eef2915853a0800000000000000
+      internalID: -6676496755793277813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726b836496879ed10800000000000000
+      internalID: 2155386290218513959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8c339ed09d49fd0800000000000000
+      internalID: -2336003652928157496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6a6ecc3c2caf160800000000000000
+      internalID: 7060169512068753061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da40d3e70b7241e0800000000000000
+      internalID: -2215072792895796527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e14ca422b9e7a60800000000000000
+      internalID: 7673741386671463976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe86fd2cb0f525df0800000000000000
+      internalID: -192987329904809745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849963b6a6d707700800000000000000
+      internalID: 536066251675834696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afca5fc8d058e01b0800000000000000
+      internalID: -5688462986076377862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1f02c15e69f3d40800000000000000
+      internalID: 5566333575216820709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db66c0e4f49114630800000000000000
+      internalID: 3909433779936847549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a844a9384c6c6d9b0800000000000000
+      internalID: -5055634984352988022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787c9ed799adf2c50800000000000000
+      internalID: 6642768328172095367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EvilGate_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96181ef7fc2295e90800000000000000
+      internalID: -7036554668190629527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
