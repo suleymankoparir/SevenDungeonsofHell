@@ -15,6 +15,7 @@ public class EnemySpawner : MonoBehaviour
     BoxCollider2D boxCollider;
     float rangeX, rangeY;
     int liveEnemy = 0;
+
     void Start()
     {
         lasttime = 0;
@@ -45,7 +46,7 @@ public class EnemySpawner : MonoBehaviour
             lasttime = Time.time;
             for(int i = 0; i < summonInOnce; i++)
             {
-                Vector3 vec = new Vector3(Random.Range(0, rangeX)+transform.position.x, Random.Range(0, rangeY)+transform.position.y,0);
+                Vector3 vec = new Vector3(Random.Range(-rangeX/2, rangeX/2)+transform.position.x, Random.Range(-rangeY/2, rangeY/2)+transform.position.y,0);
                 Collider2D[] spawnWalls = Physics2D.OverlapBoxAll(new Vector2(vec.x, vec.y), new Vector2(2, 2), 0,obstacle);
                 if (spawnWalls.Length == 0)
                     Instantiate(summoned_enemy, vec, Quaternion.identity, transform);

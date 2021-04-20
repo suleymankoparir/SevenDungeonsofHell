@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5072617331387991189}
   - component: {fileID: 5072617331387991190}
   - component: {fileID: 5072617331387991191}
+  - component: {fileID: 5724344244518225789}
   m_Layer: 6
   m_Name: Summoner Wizard
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -7434154801973699490, guid: c167ecd6b2bbb2144bf32842ac3930d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -120,12 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  sightDistance: 50
-  takeHitAnimation: 0
-  walkAnimation: 0
+  anim: {fileID: 5072617331387991186}
 --- !u!50 &5072617331387991190
 Rigidbody2D:
   serializedVersion: 4
@@ -134,7 +130,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5072617331387991185}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -173,6 +169,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.83642864, y: 2.1663017}
   m_EdgeRadius: 0
+--- !u!114 &5724344244518225789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072617331387991185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0cdaa94084ad545adfcf0681250ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawner: {fileID: 5072617330968922761}
 --- !u!1001 &6108457192586106354
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -229,6 +238,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1342098964696194939, guid: a5e23c2cff86f5247a19c1b1405fce11, type: 3}
+      propertyPath: deltatime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342098964696194939, guid: a5e23c2cff86f5247a19c1b1405fce11, type: 3}
+      propertyPath: summonInOnce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1342098964696194939, guid: a5e23c2cff86f5247a19c1b1405fce11, type: 3}
       propertyPath: summoned_enemy
       value: 
       objectReference: {fileID: 0}
@@ -239,3 +256,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1342098964696194936, guid: a5e23c2cff86f5247a19c1b1405fce11, type: 3}
   m_PrefabInstance: {fileID: 6108457192586106354}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5072617330968922761 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1342098964696194939, guid: a5e23c2cff86f5247a19c1b1405fce11, type: 3}
+  m_PrefabInstance: {fileID: 6108457192586106354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef3a46fcc535fe4dbafec6149de08c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

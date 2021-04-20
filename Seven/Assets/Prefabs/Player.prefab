@@ -134,7 +134,9 @@ GameObject:
   - component: {fileID: 8133705367589456210}
   - component: {fileID: 8133705367589456238}
   - component: {fileID: 9017711039613478376}
+  - component: {fileID: 9052109867763231537}
   - component: {fileID: 3066011261180695768}
+  - component: {fileID: 1905813872304230437}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -246,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   joystick: {fileID: 0}
+  minMovement: 0.3
 --- !u!95 &8133705367589456238
 Animator:
   serializedVersion: 3
@@ -281,12 +284,30 @@ MonoBehaviour:
   attackPointRight: {fileID: 4024223557222798059}
   attackPointUp: {fileID: 3888022856815030688}
   attackPointDown: {fileID: 4566121658828974397}
+  health: 100
   attackRange: 0.55
   attackDirectionAIRange: 3
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
   attackDamage: 30
+--- !u!114 &9052109867763231537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8133705367589456209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52a4d88ff2c61d041a4baac42ac6a878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 40
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  lightObject: {fileID: 5516489054971792228, guid: 9e56e0a83cecf49419526138eea684a1, type: 3}
 --- !u!61 &3066011261180695768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -313,3 +334,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.85765696, y: 1.4133915}
   m_EdgeRadius: 0
+--- !u!114 &1905813872304230437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8133705367589456209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda6d426533f7744bbdd3d62bea5e4bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 0}
+  attackButton: {fileID: 0}
+  skillButtons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

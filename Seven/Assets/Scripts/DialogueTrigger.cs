@@ -9,6 +9,11 @@ public class DialogueTrigger : MonoBehaviour
     bool enabled_conv = false;
     public Joystick joystick;
     public GameObject Control;
+    ControlDisable cd;
+    private void Start()
+    {
+        cd = GameObject.FindGameObjectWithTag("Player").GetComponent<ControlDisable>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player" && !enabled_conv)
@@ -17,17 +22,15 @@ public class DialogueTrigger : MonoBehaviour
 
             ConversationManager.Instance.StartConversation(my_conversation);
             ConversationManager.OnConversationEnded += ConversationEnd;
-            joystick.ResetJoystickValues();         
-            joystick.enabled = false;
-            Control.SetActive(false);
+
+            cd.disableControls();
         }
         
     }
     private void ConversationEnd()
     {
+        cd.enableControls();
         Debug.Log("A conversation has ended.");
-        Control.SetActive(true);
-        joystick.enabled = true;
     }
     private void OnDrawGizmos()
     {

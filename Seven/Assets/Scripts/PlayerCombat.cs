@@ -10,14 +10,18 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPointUp;
     public Transform attackPointDown;
 
+    public float health = 100f;
     public float attackRange = 0.5f;
     public float attackDirectionAIRange = 3f;
     public LayerMask enemyLayers;
-    public int attackDamage = 30;
+    public float attackDamage = 30f;
     Transform[] directions;
+
+    ControlDisable cd;
     void Start()
     {
         anim = this.gameObject.GetComponent<Animator>();
+        cd = GetComponent<ControlDisable>();
 
         directions = new Transform[4];
         directions[0] = attackPointRight;
@@ -34,7 +38,7 @@ public class PlayerCombat : MonoBehaviour
     {
         foreach (Collider2D enemy in area)
         {
-            enemy.GetComponent<Enemy>().takeDamage(30);   
+            enemy.GetComponent<Enemy>().takeDamage(attackDamage);   
         }
     }
     public void Attack()
@@ -85,6 +89,15 @@ public class PlayerCombat : MonoBehaviour
         else
         {
             anim.SetTrigger("Attack");
+        }
+    }
+    public void TakeHit(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Debug.Log("Öldün çýk");
+            cd.disableControls();
         }
     }
     private void OnDrawGizmosSelected()
