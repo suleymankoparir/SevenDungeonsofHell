@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class ControlDisable : MonoBehaviour
 {
-    public Joystick joystick;
-    public GameObject attackButton;
+    Joystick joystick;
+    GameObject attackButton;
     PathfinderControl pathfindercontrol;
-    public GameObject[] skillButtons = new GameObject[3];
+    GameObject[] skillButtons = new GameObject[3];
     void Start()
     {
+        joystick = GameObject.FindGameObjectWithTag("Joystick").GetComponent<Joystick>();
+        attackButton = GameObject.FindGameObjectWithTag("AttackButton");
+        skillButtons[0] = GameObject.FindGameObjectWithTag("Skill1");
         pathfindercontrol = GameObject.FindGameObjectWithTag("Pathfinding").GetComponent<PathfinderControl>();
     }
     public void disableControls()

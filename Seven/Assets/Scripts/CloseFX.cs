@@ -8,7 +8,6 @@ public class CloseFX : MonoBehaviour
     {
         if (value == -1)
         {
-            Debug.Log("Reissss");
             Destroy(gameObject);
         }
     }

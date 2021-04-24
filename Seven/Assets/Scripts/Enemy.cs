@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class Enemy : MonoBehaviour
 {
@@ -36,6 +37,18 @@ public class Enemy : MonoBehaviour
             this.GetComponent<DisableSpawner>().destroyEnemySpawner();
             this.GetComponent<DisableSpawner>().enabled = false;
         }
+        if (this.GetComponent<AIDestinationSetter>() != null)
+        {
+            Destroy(this.GetComponent<AIDestinationSetter>());
+        }
+        if (this.GetComponent<AIPath>() != null)
+        {
+            Destroy(this.GetComponent<AIPath>());
+        }
+        if (this.GetComponent<Seeker>() != null)
+        {
+            Destroy(this.GetComponent<Seeker>());
+        }       
         anim.SetBool("isDead", true);
         this.GetComponent<Collider2D>().enabled = false;
         this.enabled = false;

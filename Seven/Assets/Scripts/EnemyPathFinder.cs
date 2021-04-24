@@ -12,6 +12,7 @@ public class EnemyPathFinder : MonoBehaviour
 
     float distance;
     public float sightDistance = 50;
+    bool _stunned = false;
     void Start()
     {
         pathfindercontrol = GameObject.FindGameObjectWithTag("Pathfinding").GetComponent<PathfinderControl>();
@@ -22,16 +23,26 @@ public class EnemyPathFinder : MonoBehaviour
     {
         path.canMove = value;
     }
+    public void enableStun()
+    {
+        _stunned = true;
+        path.canMove=false;
+    }
+    public void disableStun()
+    {
+        _stunned = false;
+    }
     private void FixedUpdate()
     {
         distance = (player.position - transform.position).magnitude;
         if (distance > sightDistance)
         {
             path.canMove = false;
+            anim.SetFloat("Speed", 0);
             return;
         }
-        
-        path.canMove = pathfindercontrol.pathFindingActivity;
+        if(!_stunned)
+            path.canMove = pathfindercontrol.pathFindingActivity;
         if (!path.canMove)
         {
             anim.SetFloat("Speed", 0);

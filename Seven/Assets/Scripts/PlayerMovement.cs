@@ -7,11 +7,12 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     Rigidbody2D rigid;
     Animator anim;
-    public Joystick joystick;
+    Joystick joystick;
     Vector2 movement;
     public float minMovement = 0.3f;
     void Start()
     {
+        joystick = GameObject.FindGameObjectWithTag("Joystick").GetComponent<Joystick>();
         rigid = this.gameObject.GetComponent<Rigidbody2D>();
         anim = this.gameObject.GetComponent<Animator>();
         movement = new Vector2();

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pathfinding
+  - Joystick
+  - AttackButton
+  - Skill1
   layers:
   - Default
   - TransparentFX

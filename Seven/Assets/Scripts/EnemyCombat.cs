@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyCombat : MonoBehaviour
 {
-    public Transform center;
     public Animator anim;
     Transform player;
     PlayerCombat pc;
@@ -19,6 +18,8 @@ public class EnemyCombat : MonoBehaviour
     public float damage = 10f;
     float lastAttackTime = 0;
     public LayerMask playerMask;
+    [HideInInspector]
+    public bool stunned = false;
     PathfinderControl pathfindercontrol;
     void Start()
     {
@@ -30,19 +31,19 @@ public class EnemyCombat : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 distance = center.position - player.position;
+        Vector2 distance = transform.position - player.position;
         if (distance.magnitude < hitDistance)
         {
-            if(Time.time>lastAttackTime+attackDelay&&pc.health>0&&pathfindercontrol)
+            if(Time.time>lastAttackTime+attackDelay&&pc.health>0&&pathfindercontrol&&!stunned)
                 hitPlayer();
         }
     }
     void hitPlayer()
     {
-        Collider2D hitleft = Physics2D.OverlapCircle(center.position - new Vector3(leftPosition, 0, 0), hitRadius, playerMask);
-        Collider2D hitright = Physics2D.OverlapCircle(center.position + new Vector3(rightPosition, 0, 0), hitRadius, playerMask);
-        Collider2D hitUp = Physics2D.OverlapCircle(center.position - new Vector3(0, upPosition, 0), hitRadius, playerMask);
-        Collider2D hitDown = Physics2D.OverlapCircle(center.position + new Vector3(0,downPosition, 0), hitRadius, playerMask);
+        Collider2D hitleft = Physics2D.OverlapCircle(transform.position - new Vector3(leftPosition, 0, 0), hitRadius, playerMask);
+        Collider2D hitright = Physics2D.OverlapCircle(transform.position + new Vector3(rightPosition, 0, 0), hitRadius, playerMask);
+        Collider2D hitUp = Physics2D.OverlapCircle(transform.position - new Vector3(0, upPosition, 0), hitRadius, playerMask);
+        Collider2D hitDown = Physics2D.OverlapCircle(transform.position + new Vector3(0,downPosition, 0), hitRadius, playerMask);
         if(hitleft!=null|| hitright != null || hitUp != null || hitDown != null)
         {
             anim.SetTrigger("Attack");
@@ -54,11 +55,11 @@ public class EnemyCombat : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(center.position - new Vector3(leftPosition, 0, 0), hitRadius);
-        Gizmos.DrawWireSphere(center.position + new Vector3(rightPosition, 0, 0), hitRadius);
-        Gizmos.DrawWireSphere(center.position - new Vector3(0, upPosition, 0), hitRadius);
-        Gizmos.DrawWireSphere(center.position + new Vector3(0, downPosition, 0), hitRadius);
+        Gizmos.DrawWireSphere(transform.position - new Vector3(leftPosition, 0, 0), hitRadius);
+        Gizmos.DrawWireSphere(transform.position + new Vector3(rightPosition, 0, 0), hitRadius);
+        Gizmos.DrawWireSphere(transform.position - new Vector3(0, upPosition, 0), hitRadius);
+        Gizmos.DrawWireSphere(transform.position + new Vector3(0, downPosition, 0), hitRadius);
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(center.position, hitDistance);
+        Gizmos.DrawWireSphere(transform.position, hitDistance);
     }
 }
