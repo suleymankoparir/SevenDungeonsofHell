@@ -8,6 +8,9 @@ TagManager:
   - Joystick
   - AttackButton
   - Skill1
+  - Enemies
+  - Skill2
+  - Skill3
   layers:
   - Default
   - TransparentFX

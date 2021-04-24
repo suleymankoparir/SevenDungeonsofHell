@@ -8,4 +8,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/DungeonNameTrans.unity
+    guid: 2fe07e6406e7aa94da09f3808483acd8
+  - enabled: 1
+    path: Assets/Scenes/Dungeon_1.unity
+    guid: 4d03e37c84df5b54ab3f48ceab267fb3
+  - enabled: 1
+    path: Assets/Scenes/Dungeon_2.unity
+    guid: d24e8bff74db94e8ea5833831ff2f357
+  - enabled: 1
+    path: Assets/Scenes/Dungeon_3.unity
+    guid: 4bcf6768e52734ec39911aa35c37d8d1
+  - enabled: 1
+    path: Assets/Scenes/Dungeon_4.unity
+    guid: 0ed5d2615caa84625ba1543e99eab160
+  - enabled: 1
+    path: Assets/Scenes/Dungeon_5.unity
+    guid: e0ccef6d388d542488a3a2b80be5c3e2
+  - enabled: 1
+    path: Assets/Scenes/Dungeon_6.unity
+    guid: fe9b0424e19484d95860d5ff7fef5f1f
+  - enabled: 1
+    path: Assets/Scenes/Dungeon_7.unity
+    guid: 70fc03cb7ba3e423d9aec8004f5e2f50
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e445e7e98d045ca43a1089296fae9677
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 98187cfbcffad664494a6c74f66f6661
+  - enabled: 1
+    path: Assets/Scenes/Dead.unity
+    guid: 78ee426c0e43f77449cf997726d0112d
   m_configObjects: {}

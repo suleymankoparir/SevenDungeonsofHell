@@ -248,7 +248,7 @@ PrefabInstance:
     - target: {fileID: 1342098964696194939, guid: a5e23c2cff86f5247a19c1b1405fce11, type: 3}
       propertyPath: summoned_enemy
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8867831852311101462, guid: 4eb4583912aae2f428bca2b3c7a095a1, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5e23c2cff86f5247a19c1b1405fce11, type: 3}
 --- !u!4 &5072617330968922762 stripped

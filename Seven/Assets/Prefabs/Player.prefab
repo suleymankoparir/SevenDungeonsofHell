@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 9052109867763231537}
   - component: {fileID: 3066011261180695768}
   - component: {fileID: 870636008725358669}
+  - component: {fileID: 6907753583648272207}
   - component: {fileID: 1905813872304230437}
   m_Layer: 8
   m_Name: Player
@@ -280,17 +281,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96df6fa94bdeff4cafbdaaf70c27474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deltatime: 0.3
+  lasttime: 0
   attackPointLeft: {fileID: 4821882558519145758}
   attackPointRight: {fileID: 4024223557222798059}
   attackPointUp: {fileID: 3888022856815030688}
   attackPointDown: {fileID: 4566121658828974397}
   health: 100
+  currentHealth: 100
   attackRange: 0.55
   attackDirectionAIRange: 3
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
   attackDamage: 30
+  directions: []
 --- !u!114 &9052109867763231537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,11 +308,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52a4d88ff2c61d041a4baac42ac6a878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  deltatime: 5
   damage: 40
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
   lightObject: {fileID: 5516489054971792228, guid: 9e56e0a83cecf49419526138eea684a1, type: 3}
+  debug: 0
 --- !u!61 &3066011261180695768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -346,10 +354,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57a473a872e8fce46a4af222cc81b3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  deltatimeButton: 5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
   deltatime: 4
+  debug: 0
+--- !u!114 &6907753583648272207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8133705367589456209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c3a7cac43237d49bf2328c1defa912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  deltatime: 5
+  damage: 100
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  debug: 0
 --- !u!114 &1905813872304230437
 MonoBehaviour:
   m_ObjectHideFlags: 0

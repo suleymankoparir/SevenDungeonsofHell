@@ -13,6 +13,8 @@ public class ControlDisable : MonoBehaviour
         joystick = GameObject.FindGameObjectWithTag("Joystick").GetComponent<Joystick>();
         attackButton = GameObject.FindGameObjectWithTag("AttackButton");
         skillButtons[0] = GameObject.FindGameObjectWithTag("Skill1");
+        skillButtons[1] = GameObject.FindGameObjectWithTag("Skill2");
+        skillButtons[2] = GameObject.FindGameObjectWithTag("Skill3");
         pathfindercontrol = GameObject.FindGameObjectWithTag("Pathfinding").GetComponent<PathfinderControl>();
     }
     public void disableControls()
@@ -41,10 +43,5 @@ public class ControlDisable : MonoBehaviour
             if (skillButtons[i] != null)
                 skillButtons[i].SetActive(true);
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

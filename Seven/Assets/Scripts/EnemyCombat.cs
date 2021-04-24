@@ -34,7 +34,7 @@ public class EnemyCombat : MonoBehaviour
         Vector2 distance = transform.position - player.position;
         if (distance.magnitude < hitDistance)
         {
-            if(Time.time>lastAttackTime+attackDelay&&pc.health>0&&pathfindercontrol&&!stunned)
+            if(Time.time>lastAttackTime+attackDelay&&pc.currentHealth>0&&pathfindercontrol&&!stunned)
                 hitPlayer();
         }
     }
@@ -48,7 +48,6 @@ public class EnemyCombat : MonoBehaviour
         {
             anim.SetTrigger("Attack");
             pc.TakeHit(damage);
-            Debug.Log(" PlayerTake Hit: "+pc.health);
             lastAttackTime = Time.time;
         }
     }

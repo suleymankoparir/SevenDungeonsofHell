@@ -21,13 +21,16 @@ public class FadeText : MonoBehaviour
     
     void FixedUpdate()
     {
-        if (Time.time>visibleTime&&Time.time > lasttime + deltatime)
+        if (Time.timeSinceLevelLoad>visibleTime&&Time.time > lasttime + deltatime)
         {
             lasttime = Time.time;
             temp.a -= deltaalpha;
             txt.color = temp;
             if (temp.a <= 0)
+            {
                 this.enabled = false;
+            }
+                
         }
     }
 }

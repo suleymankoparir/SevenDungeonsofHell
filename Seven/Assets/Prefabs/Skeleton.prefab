@@ -320,6 +320,7 @@ MonoBehaviour:
   playerMask:
     serializedVersion: 2
     m_Bits: 256
+  stunned: 0
 --- !u!114 &5331321232361772782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 6369422366059788722}
-  sightDistance: 15
+  sightDistance: 12
 --- !u!114 &3941836383250368279
 MonoBehaviour:
   m_ObjectHideFlags: 0

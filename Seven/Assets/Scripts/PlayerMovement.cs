@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         {
             movement.x = joystick.Direction.x;
             movement.y = joystick.Direction.y;
+            movement.Normalize();
         }
         else
         {
