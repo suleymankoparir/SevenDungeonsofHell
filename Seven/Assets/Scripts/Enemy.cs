@@ -9,8 +9,13 @@ public class Enemy : MonoBehaviour
     Transform player;
     public float currentHealth;
     public Animator anim;
+    public bool takeHitAnimation = true;
     void Start()
     {
+        if (takeHitAnimation)
+        {
+            anim.SetBool("TakeHitAnimation", true);
+        }
         currentHealth = maxHealth;
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }

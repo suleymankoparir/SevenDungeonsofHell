@@ -7,8 +7,6 @@ public class DialogueTrigger : MonoBehaviour
 {
     public NPCConversation my_conversation;
     bool enabled_conv = false;
-    public Joystick joystick;
-    public GameObject Control;
     ControlDisable cd;
     private void Start()
     {
