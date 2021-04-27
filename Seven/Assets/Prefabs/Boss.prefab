@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2432067139006190621}
   - component: {fileID: 1381486137382748900}
   - component: {fileID: 7810536389424042781}
+  - component: {fileID: 6598868159576559512}
   m_Layer: 6
   m_Name: Boss
   m_TagString: Untagged
@@ -55,6 +56,7 @@ MonoBehaviour:
   maxHealth: 500
   currentHealth: 0
   anim: {fileID: 5898433734754460068}
+  takeHitAnimation: 1
 --- !u!50 &2432067139006190594
 Rigidbody2D:
   serializedVersion: 4
@@ -226,11 +228,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2432067139006190620}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aba8b28eaf2cc5a4ba887681b8a24919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6598868159576559512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432067139006190620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4efd71321a166445af547850ada19e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dTrigger: {fileID: 0}
+  tSetter: {fileID: 7810536389424042781}
 --- !u!1 &5898433734754460067
 GameObject:
   m_ObjectHideFlags: 0

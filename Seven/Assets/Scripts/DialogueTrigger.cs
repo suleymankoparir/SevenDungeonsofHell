@@ -7,6 +7,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public NPCConversation my_conversation;
     bool enabled_conv = false;
+    public bool ended = false;
     ControlDisable cd;
     private void Start()
     {
@@ -28,6 +29,7 @@ public class DialogueTrigger : MonoBehaviour
     private void ConversationEnd()
     {
         cd.enableControls();
+        ended = true;
         Debug.Log("A conversation has ended.");
     }
     private void OnDrawGizmos()
