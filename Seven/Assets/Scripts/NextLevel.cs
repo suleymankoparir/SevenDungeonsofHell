@@ -36,7 +36,7 @@ public class NextLevel : MonoBehaviour
         else
         {
             PlayerPrefs.SetString("Game", "not active");
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene("End");
         }
     }
     public void nextLevel()

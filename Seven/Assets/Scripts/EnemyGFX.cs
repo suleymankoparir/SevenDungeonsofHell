@@ -9,7 +9,11 @@ public class EnemyGFX : MonoBehaviour
     void Start()
     {
     }
-
+    public void attack()
+    {
+        if(transform.parent.GetComponent<EnemyCombat>()!=null)
+            transform.parent.GetComponent<EnemyCombat>().hitPlayer();
+    }
     // Update is called once per frame
     void Update()
     {

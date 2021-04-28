@@ -34,22 +34,24 @@ public class EnemyCombat : MonoBehaviour
         Vector2 distance = transform.position - player.position;
         if (distance.magnitude < hitDistance)
         {
-            if(Time.time>lastAttackTime+attackDelay&&pc.currentHealth>0&&pathfindercontrol&&!stunned)
-                hitPlayer();
+            if (Time.time > lastAttackTime + attackDelay && pc.currentHealth > 0 && pathfindercontrol && !stunned)
+            {
+                lastAttackTime = Time.time;
+                anim.SetTrigger("Attack");
+            }
+                
         }
     }
-    void hitPlayer()
-    {
+    public void hitPlayer()
+    {    
         Collider2D hitleft = Physics2D.OverlapCircle(transform.position - new Vector3(leftPosition, 0, 0), hitRadius, playerMask);
         Collider2D hitright = Physics2D.OverlapCircle(transform.position + new Vector3(rightPosition, 0, 0), hitRadius, playerMask);
         Collider2D hitUp = Physics2D.OverlapCircle(transform.position - new Vector3(0, upPosition, 0), hitRadius, playerMask);
-        Collider2D hitDown = Physics2D.OverlapCircle(transform.position + new Vector3(0,downPosition, 0), hitRadius, playerMask);
-        if(hitleft!=null|| hitright != null || hitUp != null || hitDown != null)
+        Collider2D hitDown = Physics2D.OverlapCircle(transform.position + new Vector3(0, downPosition, 0), hitRadius, playerMask);
+        if (hitleft != null || hitright != null || hitUp != null || hitDown != null)
         {
-            anim.SetTrigger("Attack");
-            pc.TakeHit(damage);
-            lastAttackTime = Time.time;
-        }
+            pc.TakeHit(damage);       
+        }     
     }
     private void OnDrawGizmos()
     {
