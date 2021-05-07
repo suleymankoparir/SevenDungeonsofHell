@@ -11,7 +11,7 @@ public class DialogueTrigger : MonoBehaviour
     ControlDisable cd;
     private void Start()
     {
-        cd = GameObject.FindGameObjectWithTag("Player").GetComponent<ControlDisable>();
+        cd = GameObject.FindGameObjectWithTag("GameSystem").GetComponent<ControlDisable>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,7 +20,7 @@ public class DialogueTrigger : MonoBehaviour
             enabled_conv = true;
 
             ConversationManager.Instance.StartConversation(my_conversation);
-            ConversationManager.OnConversationEnded += ConversationEnd;
+            ConversationManager.OnConversationEnded = ConversationEnd;
 
             cd.disableControls();
         }
@@ -31,6 +31,8 @@ public class DialogueTrigger : MonoBehaviour
         cd.enableControls();
         ended = true;
         Debug.Log("A conversation has ended.");
+        
+        this.enabled = false;
     }
     private void OnDrawGizmos()
     {

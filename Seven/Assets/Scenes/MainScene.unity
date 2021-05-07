@@ -24946,8 +24946,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7295ca6f09a10e4899d258a18e419ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectiveText: Kill All
+  objectiveText: Kill All Enemies
   achieved: 0
+  enemies: {fileID: 1639067697}
 --- !u!1001 &399601858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38486,6 +38487,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2063163532}
+    - target: {fileID: 4061067836577525343, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4061067836577525346, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -38541,7 +38546,7 @@ PrefabInstance:
     - target: {fileID: 4548371736952306832, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: objectiveKillAll
       value: 
-      objectReference: {fileID: 367232405}
+      objectReference: {fileID: 0}
     - target: {fileID: 4548371736952306832, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: objectiveKill.Array.size
       value: 1
@@ -38582,7 +38587,8 @@ PrefabInstance:
       propertyPath: debug
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4512003770479769809, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
 --- !u!1001 &6774505529762147809
 PrefabInstance:

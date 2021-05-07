@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        
         rigid.MovePosition(rigid.position + movement*moveSpeed*Time.fixedDeltaTime);
     }
 }
