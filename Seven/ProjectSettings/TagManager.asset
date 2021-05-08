@@ -12,6 +12,7 @@ TagManager:
   - Skill2
   - Skill3
   - GameSystem
+  - DialogueTrigger
   layers:
   - Default
   - TransparentFX

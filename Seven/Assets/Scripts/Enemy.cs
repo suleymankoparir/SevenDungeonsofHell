@@ -30,6 +30,14 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
+        if (this.GetComponent<SpriteRenderer>() != null)
+        {
+            this.GetComponent<SpriteRenderer>().sortingOrder = 2;
+        }
+        else if(transform.GetChild(0)!=null&& transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>() != null)
+        {
+            transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
+        }
         if (this.GetComponent<EnemyCombat>() != null)
             this.GetComponent<EnemyCombat>().enabled = false;
         if (this.GetComponent<EnemyPathFinder>() != null)

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6774505529721747176}
   m_Layer: 0
   m_Name: DialogueTrigger
-  m_TagString: Untagged
+  m_TagString: DialogueTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_conversation: {fileID: 0}
-  joystick: {fileID: 0}
+  ended: 0
+  PrefName: Dungeon Code
+  debug: 0
 --- !u!61 &6774505529721747176
 BoxCollider2D:
   m_ObjectHideFlags: 0

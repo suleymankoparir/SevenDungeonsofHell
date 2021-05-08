@@ -14,6 +14,7 @@ public class LightofPride : MonoBehaviour
     public LayerMask enemyLayer;
     public GameObject lightObject;
     public bool debug = false;
+    SoundManager soundManager;
     private void Start()
     {
         if (!debug&&PlayerPrefs.GetInt("Light", -1) == -1)
@@ -22,10 +23,13 @@ public class LightofPride : MonoBehaviour
             //button.enabled = false;
             this.enabled = false;
         }
+        soundManager = GetComponent<SoundManager>();
     }
     public void hitEnemy()
     {
         Collider2D[] hitArea = Physics2D.OverlapCircleAll(transform.position, skillDistance, enemyLayer);
+        if (hitArea.Length > 0)
+            soundManager.skill3Play();
         for(int i = 0; i < hitArea.Length; i++)
         {
             button.interactable = false;

@@ -9,6 +9,7 @@ public class ControlDisable : MonoBehaviour
     public GameObject attackButton;
     PathfinderControl pathfindercontrol;
     public GameObject[] skillButtons = new GameObject[3];
+    PlayerCombat pCombat;
     void Start()
     {
         Debug.Log("Start");
@@ -18,6 +19,7 @@ public class ControlDisable : MonoBehaviour
         //skillButtons[1] = GameObject.FindGameObjectWithTag("Skill2");
         //skillButtons[2] = GameObject.FindGameObjectWithTag("Skill3");
         pathfindercontrol = GameObject.FindGameObjectWithTag("Pathfinding").GetComponent<PathfinderControl>();
+        pCombat = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>();
     }
     public void disableControls()
     {
@@ -36,14 +38,17 @@ public class ControlDisable : MonoBehaviour
     }
     public void enableControls()
     {
-        joystick.gameObject.SetActive(true);
-        joystick.enabled = true;
-        attackButton.SetActive(true);
-        pathfindercontrol.pathFindingActivity = true;
-        for (int i = 0; i < 3; i++)
+        if (pCombat.currentHealth > 0)
         {
-            if (skillButtons[i] != null)
-                skillButtons[i].SetActive(true);
-        }
+            joystick.gameObject.SetActive(true);
+            joystick.enabled = true;
+            attackButton.SetActive(true);
+            pathfindercontrol.pathFindingActivity = true;
+            for (int i = 0; i < 3; i++)
+            {
+                if (skillButtons[i] != null)
+                    skillButtons[i].SetActive(true);
+            }
+        }      
     }
 }
