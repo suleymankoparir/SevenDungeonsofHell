@@ -13,6 +13,8 @@ TagManager:
   - Skill3
   - GameSystem
   - DialogueTrigger
+  - MainSoundManager
+  - Boss
   layers:
   - Default
   - TransparentFX

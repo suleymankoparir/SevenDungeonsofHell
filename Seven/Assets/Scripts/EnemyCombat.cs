@@ -21,13 +21,11 @@ public class EnemyCombat : MonoBehaviour
     [HideInInspector]
     public bool stunned = false;
     PathfinderControl pathfindercontrol;
-    SoundManager soundManager;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         pathfindercontrol = GameObject.FindGameObjectWithTag("Pathfinding").GetComponent<PathfinderControl>();
         pc =player.GetComponent<PlayerCombat>();
-        soundManager = GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -46,7 +44,8 @@ public class EnemyCombat : MonoBehaviour
     }
     public void hitPlayer()
     {
-        soundManager.attack();
+        if (FindObjectOfType<MainSoundManager>() != null)
+            FindObjectOfType<MainSoundManager>().Play("Attack");
         Collider2D hitleft = Physics2D.OverlapCircle(transform.position - new Vector3(leftPosition, 0, 0), hitRadius, playerMask);
         Collider2D hitright = Physics2D.OverlapCircle(transform.position + new Vector3(rightPosition, 0, 0), hitRadius, playerMask);
         Collider2D hitUp = Physics2D.OverlapCircle(transform.position - new Vector3(0, upPosition, 0), hitRadius, playerMask);

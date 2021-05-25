@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class OptionMenu : MonoBehaviour
 {
-    public AudioSource clickSound;
+    MainSoundManager mainSoundManager;
+    private void Start()
+    {
+        mainSoundManager = GameObject.FindGameObjectWithTag("MainSoundManager").GetComponent<MainSoundManager>();
+    }
     public GameObject MainMenu;
     public GameObject optionTab;
     public void openOption()
     {
-        clickSound.Play();
+        mainSoundManager.Play("Click");
         MainMenu.SetActive(false);
         optionTab.SetActive(true);
     }
     public void closeOption()
     {
-        clickSound.Play();
+        mainSoundManager.Play("Click");
         MainMenu.SetActive(true);
         optionTab.SetActive(false);
     }

@@ -24,13 +24,11 @@ public class PlayerCombat : MonoBehaviour
     public Transform[] directions;
     PlayerMovement pMovement;
     ControlDisable cd;
-    SoundManager soundManager;
     void Start()
     {
         currentHealth = health;
         anim = this.gameObject.GetComponent<Animator>();
         cd =GameObject.FindGameObjectWithTag("GameSystem").GetComponent<ControlDisable>();
-        soundManager = GetComponent<SoundManager>();
         pMovement = GetComponent<PlayerMovement>();
         directions = new Transform[4];
         directions[0] = attackPointRight;
@@ -90,7 +88,8 @@ public class PlayerCombat : MonoBehaviour
                 max_enemy = hitDown.Length;
                 horizontal = -1;
             }
-            soundManager.attack();
+            if (FindObjectOfType<MainSoundManager>() != null)
+                FindObjectOfType<MainSoundManager>().Play("AttackAxe");
             if (max_enemy > 0)
             {
                 hitAll(enemies);

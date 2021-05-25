@@ -10,12 +10,11 @@ public class MainMenu : MonoBehaviour
     public Button continueButton;
     public TextMeshProUGUI txt;
     public bool debugCon = false;
-    public AudioSource aSource;
+    MainSoundManager mainSoundManager;
     public Slider slider;
-    public AudioSource click;
     private void Start()
     {
-        click.volume = PlayerPrefs.GetFloat("Volume", 0.5f);
+        mainSoundManager = GameObject.FindGameObjectWithTag("MainSoundManager").GetComponent<MainSoundManager>();
         if(debugCon||PlayerPrefs.GetString("Game","not active")== "not active")
         {
             Color temp = txt.color;
@@ -26,29 +25,28 @@ public class MainMenu : MonoBehaviour
     }
     public void newGame()
     {
-        click.Play();
+        mainSoundManager.Play("Click");
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetString("Game", "active");
         SceneManager.LoadScene("DungeonNameTrans");
     }
     public void continueGame()
     {
-        click.Play();
+        mainSoundManager.Play("Click");
         SceneManager.LoadScene("DungeonNameTrans");
     }
     public void exitButton()
     {
-        click.Play();
+        mainSoundManager.Play("Click");
         Application.Quit();
     }
     public void optionButton()
     {
-        click.Play();
+        mainSoundManager.Play("Click");
     }
     public void volumeChange()
     {
-        aSource.volume = slider.value;
-        click.volume = slider.value;
+        mainSoundManager.changeVolume(slider.value);
         PlayerPrefs.SetFloat("Volume", slider.value);
     }
 }

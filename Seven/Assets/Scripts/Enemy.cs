@@ -47,6 +47,8 @@ public class Enemy : MonoBehaviour
         }
         if (this.GetComponent<DisableSpawner>() != null)
         {
+            if (FindObjectOfType<MainSoundManager>() != null)
+                FindObjectOfType<MainSoundManager>().Play("Scream");
             this.GetComponent<DisableSpawner>().destroyEnemySpawner();
             this.GetComponent<DisableSpawner>().enabled = false;
         }

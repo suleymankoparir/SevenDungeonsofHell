@@ -38,9 +38,16 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);
     }
+    float walksoundLastTime = 0;
     private void FixedUpdate()
     {
-        
+
+        if (movement.sqrMagnitude > minMovement && Time.time > walksoundLastTime + 0.5f)
+        {
+            if (FindObjectOfType<MainSoundManager>() != null)
+                FindObjectOfType<MainSoundManager>().PlayWalk("Walk");
+            walksoundLastTime = Time.time;
+        }          
         rigid.MovePosition(rigid.position + movement*moveSpeed*Time.fixedDeltaTime);
     }
 }

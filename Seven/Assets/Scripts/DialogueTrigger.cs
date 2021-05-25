@@ -33,8 +33,27 @@ public class DialogueTrigger : MonoBehaviour
         }
         
     }
+    public void triggerDialogue()
+    {
+        if (!enabled_conv && !ended)
+        {
+            Debug.Log("dialog baþlatýldý");
+            enabled_conv = true;
+            ConversationManager.Instance.StartConversation(my_conversation);
+            ConversationManager.OnConversationEnded = ConversationEnd;
+            cd.disableControls();
+        }  
+    }
     private void ConversationEnd()
     {
+        if(PrefName=="Dungeon 7")
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Helmet");
+            PlayerPrefs.SetInt(PrefName, 0);
+            ended = true;
+            this.enabled = false;  
+            return;
+        }
         cd.enableControls();
         ended = true;
         Debug.Log("A conversation has ended.");
