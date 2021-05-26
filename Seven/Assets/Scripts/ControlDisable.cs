@@ -1,21 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControlDisable : MonoBehaviour
 {
-    Joystick joystick;
-    GameObject attackButton;
+    public Joystick joystick;
+    public GameObject attackButton;
     PathfinderControl pathfindercontrol;
-    GameObject[] skillButtons = new GameObject[3];
+    public GameObject[] skillButtons = new GameObject[3];
+    PlayerCombat pCombat;
     void Start()
     {
-        joystick = GameObject.FindGameObjectWithTag("Joystick").GetComponent<Joystick>();
-        attackButton = GameObject.FindGameObjectWithTag("AttackButton");
-        skillButtons[0] = GameObject.FindGameObjectWithTag("Skill1");
-        skillButtons[1] = GameObject.FindGameObjectWithTag("Skill2");
-        skillButtons[2] = GameObject.FindGameObjectWithTag("Skill3");
+        Debug.Log("Start");
+        //joystick = joyObject.GetComponent<Joystick>();
+        //attackButton = GameObject.FindGameObjectWithTag("AttackButton");
+        //skillButtons[0] = GameObject.FindGameObjectWithTag("Skill1");
+        //skillButtons[1] = GameObject.FindGameObjectWithTag("Skill2");
+        //skillButtons[2] = GameObject.FindGameObjectWithTag("Skill3");
         pathfindercontrol = GameObject.FindGameObjectWithTag("Pathfinding").GetComponent<PathfinderControl>();
+        pCombat = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>();
     }
     public void disableControls()
     {
@@ -34,14 +38,17 @@ public class ControlDisable : MonoBehaviour
     }
     public void enableControls()
     {
-        joystick.gameObject.SetActive(true);
-        attackButton.SetActive(true);
-        joystick.enabled = true;
-        pathfindercontrol.pathFindingActivity = true;
-        for (int i = 0; i < 3; i++)
+        if (pCombat.currentHealth > 0)
         {
-            if (skillButtons[i] != null)
-                skillButtons[i].SetActive(true);
-        }
+            joystick.gameObject.SetActive(true);
+            joystick.enabled = true;
+            attackButton.SetActive(true);
+            pathfindercontrol.pathFindingActivity = true;
+            for (int i = 0; i < 3; i++)
+            {
+                if (skillButtons[i] != null)
+                    skillButtons[i].SetActive(true);
+            }
+        }      
     }
 }

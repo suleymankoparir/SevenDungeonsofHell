@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     Joystick joystick;
     Vector2 movement;
+    [HideInInspector]
+    public float horizontalDirection = 0f;
     public float minMovement = 0.3f;
     void Start()
     {
@@ -24,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
             movement.x = joystick.Direction.x;
             movement.y = joystick.Direction.y;
             movement.Normalize();
+            horizontalDirection = movement.x;
         }
         else
         {
@@ -31,12 +34,20 @@ public class PlayerMovement : MonoBehaviour
             movement.y = 0;
         }
 
-        anim.SetFloat("Horizontal", movement.x);
+        anim.SetFloat("Horizontal", horizontalDirection);
         anim.SetFloat("Vertical", movement.y);
         anim.SetFloat("Speed", movement.sqrMagnitude);
     }
+    float walksoundLastTime = 0;
     private void FixedUpdate()
     {
+
+        if (movement.sqrMagnitude > minMovement && Time.time > walksoundLastTime + 0.5f)
+        {
+            if (FindObjectOfType<MainSoundManager>() != null)
+                FindObjectOfType<MainSoundManager>().PlayWalk("Walk");
+            walksoundLastTime = Time.time;
+        }          
         rigid.MovePosition(rigid.position + movement*moveSpeed*Time.fixedDeltaTime);
     }
 }

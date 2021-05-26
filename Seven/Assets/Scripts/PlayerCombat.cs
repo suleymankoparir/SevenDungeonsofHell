@@ -12,7 +12,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPointRight;
     public Transform attackPointUp;
     public Transform attackPointDown;
-
+    bool dead=false;
     public float health = 100f;
     [HideInInspector]
     public float currentHealth = 100f;
@@ -22,14 +22,14 @@ public class PlayerCombat : MonoBehaviour
     public float attackDamage = 30f;
     [HideInInspector]
     public Transform[] directions;
-
+    PlayerMovement pMovement;
     ControlDisable cd;
     void Start()
     {
         currentHealth = health;
         anim = this.gameObject.GetComponent<Animator>();
-        cd = GetComponent<ControlDisable>();
-
+        cd =GameObject.FindGameObjectWithTag("GameSystem").GetComponent<ControlDisable>();
+        pMovement = GetComponent<PlayerMovement>();
         directions = new Transform[4];
         directions[0] = attackPointRight;
         directions[1] = attackPointUp;
@@ -88,7 +88,8 @@ public class PlayerCombat : MonoBehaviour
                 max_enemy = hitDown.Length;
                 horizontal = -1;
             }
-
+            if (FindObjectOfType<MainSoundManager>() != null)
+                FindObjectOfType<MainSoundManager>().Play("AttackAxe");
             if (max_enemy > 0)
             {
                 hitAll(enemies);
@@ -98,15 +99,19 @@ public class PlayerCombat : MonoBehaviour
             }
             else
             {
+                anim.SetFloat("AttackVertical", 0f);
+                anim.SetFloat("AttackHorizontal", pMovement.horizontalDirection);
                 anim.SetTrigger("Attack");
             }
         }   
     }
-    void die()
+    IEnumerator Die()
     {
         cd.disableControls();
+        yield return new WaitForSeconds(4f);
         diedScene();
     }
+    
     void diedScene()
     {
         PlayerPrefs.SetInt("Level", 1);
@@ -115,9 +120,10 @@ public class PlayerCombat : MonoBehaviour
     public void TakeHit(float damage)
     {
         currentHealth -= damage;
-        if (currentHealth <= 0)
+        if (currentHealth <= 0&&!dead)
         {
-            die();
+            dead = true;
+            StartCoroutine(Die());
         }
     }
     private void OnDrawGizmosSelected()

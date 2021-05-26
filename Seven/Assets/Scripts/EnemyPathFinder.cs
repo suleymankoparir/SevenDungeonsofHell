@@ -9,7 +9,7 @@ public class EnemyPathFinder : MonoBehaviour
     PathfinderControl pathfindercontrol;
     Transform player;
     public Animator anim;
-
+    public bool walkSound = true;
     float distance;
     public float sightDistance = 50;
     bool _stunned = false;
@@ -32,6 +32,7 @@ public class EnemyPathFinder : MonoBehaviour
     {
         _stunned = false;
     }
+    float walksoundLastTime = 0;
     private void FixedUpdate()
     {
         distance = (player.position - transform.position).magnitude;
@@ -49,6 +50,12 @@ public class EnemyPathFinder : MonoBehaviour
         }
         else if (path.desiredVelocity.magnitude > 0.01f)
         {
+            if (Time.time > walksoundLastTime + 0.5f)
+            {
+                walksoundLastTime = Time.time;
+                if (FindObjectOfType<MainSoundManager>() != null&&walkSound)
+                    FindObjectOfType<MainSoundManager>().PlayWalk("Walk");
+            }
             anim.SetFloat("Speed", path.desiredVelocity.magnitude);
         }
     }

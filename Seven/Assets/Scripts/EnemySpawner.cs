@@ -49,7 +49,12 @@ public class EnemySpawner : MonoBehaviour
                 Vector3 vec = new Vector3(Random.Range(-rangeX/2, rangeX/2)+transform.position.x, Random.Range(-rangeY/2, rangeY/2)+transform.position.y,0);
                 Collider2D[] spawnWalls = Physics2D.OverlapBoxAll(new Vector2(vec.x, vec.y), new Vector2(2, 2), 0,obstacle);
                 if (spawnWalls.Length == 0)
+                {
                     Instantiate(summoned_enemy, vec, Quaternion.identity, transform);
+                    if (FindObjectOfType<MainSoundManager>() != null)
+                        FindObjectOfType<MainSoundManager>().Play("Summon");
+                }
+                    
             }
             
         }

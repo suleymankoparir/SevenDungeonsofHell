@@ -9,7 +9,7 @@ public class HammerofJustice : MonoBehaviour
     public float deltatime = 5f;
     float lasttime = 0;
 
-    float skillDistance = 8f;
+    public float skillDistance = 8f;
     public float damage = 100f;
     public LayerMask enemyLayer;
     public bool debug = false;
@@ -26,9 +26,7 @@ public class HammerofJustice : MonoBehaviour
     }
     public void hammerEnemy()
     {
-        for(int i = 0; i < pCombat.directions.Length; i++)
-        {
-            Collider2D[] hit = Physics2D.OverlapCircleAll(pCombat.directions[i].position, pCombat.attackRange, enemyLayer);
+            Collider2D[] hit = Physics2D.OverlapCircleAll(transform.position, skillDistance, enemyLayer);
             if (hit.Length > 0)
             {
                 button.interactable = false;
@@ -37,12 +35,14 @@ public class HammerofJustice : MonoBehaviour
                 {
                     if (hit[j].gameObject.GetComponent<Enemy>() != null)
                     {
-                        hit[j].gameObject.GetComponent<Enemy>().takeDamage(hit[j].gameObject.GetComponent<Enemy>().currentHealth);
-                    }
+                        if(hit[j].gameObject.tag!="Boss")
+                            hit[j].gameObject.GetComponent<Enemy>().takeDamage(hit[j].gameObject.GetComponent<Enemy>().currentHealth);
+                        else
+                            hit[j].gameObject.GetComponent<Enemy>().takeDamage(damage);
+                }
                 }
 
             }
-        }
     }
     private void FixedUpdate()
     {

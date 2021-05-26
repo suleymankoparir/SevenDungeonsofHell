@@ -6,10 +6,10 @@ public class ObjectiveKillAll : MonoBehaviour
 {
     public string objectiveText = "";
     public bool achieved = false;
-    Transform enemies;
+    public Transform enemies;
     void Start()
     {
-        enemies = GameObject.FindGameObjectWithTag("Enemies").transform;
+        //enemies = GameObject.FindGameObjectWithTag("Enemies").transform;
     }
     void FixedUpdate()
     {

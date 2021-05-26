@@ -12,11 +12,15 @@ public class ObjectiveController : MonoBehaviour
     List<Text> killTexts = new List<Text>();
     Text killAllText;
     bool allAchived = false;
-    public ObjectiveKillAll objectiveKillAll;
+    ObjectiveKillAll objectiveKillAll;
     public ObjectiveKill[] objectiveKill;
     public ObjectiveKillGroup[] objectiveKillGroup;
     private void Start()
     {
+        if (GetComponent<ObjectiveKillAll>() != null)
+        {
+            objectiveKillAll = GetComponent<ObjectiveKillAll>();
+        }
         if (objectiveKillAll != null)
         {
             killAllText = Instantiate(objective, parent.transform).GetComponent<Text>();

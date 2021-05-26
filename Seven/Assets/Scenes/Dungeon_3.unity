@@ -37247,6 +37247,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -107.1
       objectReference: {fileID: 0}
+    - target: {fileID: 6470067863915351324, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: health
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 8268972891896895218, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: data.dataString
       value: UEsDBBQAAAgIAAAYIewAtYIWUwIAAPgEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMuS2jAQ/BVK55DCOMGQW2JYNgcWaklqL74Ie4xVyJJLj+Wxxb9nJNvY65wYpntG3aORPwgTuoLUSLVWLNvIDMiPEXEx+TLqwGe40KMUe3aDlvPGMlM4EvWcV2qYxHzgyrQswSiW/hRH7sgTTFrBcqnKVXaEWGqjMZ1TrgEhJY2rFpj6GJEL/owXruSK0TRy0Q2jxWR0xzAFYUD1qGFLHU9bas20IuW0rCBzsruCYNIWYOSJAi01HCc/lZwz3egh5lp5vzGttEU3SMgYRX9ehOMXwI6FcVr7xds812Aa84pel0zhmOqu5JesZ1dSfaqVvVNuvYDp3Guqm27+w8eBh3Mly+f23NqRKVh6eqXXlGrTG24/vfws3Ioz5Sd64PBWgHiRayWtyBA0yrpSq2G67P4+rMUFpKcuX0sdJG3VTbydd3s9zsPdu7/EnJUHB339Vif2XPp5+wUAhTfzGwX79dBNC8w6FX81/KHH/h41wBNT2iDUuBRO3kFa5ahk5Wfm3FgTSyXApxvRFQjKzXWHbczwCgdY79gB8kTdi2kOb7D2IQxKfLrjTyYDaCfPj8vShTxvQBdbazgT0Il2wAvOKZZC1BvWn0lbtrcqp2mv7GhZ9nm1yCwMD4swXEBOw9kimI2DKAqieTSbhvPD9yhdEL97TKBPyne10GY8eGuiay5wz9oPyWitaOW3PVP0vGa3UvZGzkQu96kCENu6w0M4KDwEX2W2yhgOaA/GMOHvm3wkhMv0BFnyaJR4p6uLUTTpuiSkYu/SuExCYv/lSMid3P8BUEsDBBQAAAgIAAAYIex340K6bQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrSSmbFxkqWxsWVqWqKxmaWhma6hubmhuYW5mZGxRZKpebKlUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAYIewAtYIWUwIAAPgEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAYIex340K6bQAAAHgAAAAJACQAAAAAAAAAAAAAAKACAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAWAMAAAAA
@@ -37365,6 +37369,10 @@ PrefabInstance:
     - target: {fileID: 6774505529721747178, guid: 319ba5759618bea49b5b9c3543c249bf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774505529721747179, guid: 319ba5759618bea49b5b9c3543c249bf, type: 3}
+      propertyPath: PrefName
+      value: Dungeon 3
       objectReference: {fileID: 0}
     - target: {fileID: 6774505529721747179, guid: 319ba5759618bea49b5b9c3543c249bf, type: 3}
       propertyPath: my_conversation

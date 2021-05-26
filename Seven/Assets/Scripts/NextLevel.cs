@@ -8,7 +8,7 @@ public class NextLevel : MonoBehaviour
     ControlDisable cDisable;
     void Start()
     {
-        cDisable = GameObject.FindGameObjectWithTag("Player").GetComponent<ControlDisable>();
+        cDisable = GameObject.FindGameObjectWithTag("GameSystem").GetComponent<ControlDisable>();
     }
     IEnumerator nextLevelIE()
     {

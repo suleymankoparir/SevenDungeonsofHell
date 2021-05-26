@@ -231,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 8574470501504289868}
+  walkSound: 0
   sightDistance: 12
 --- !u!1 &8574470501504289871
 GameObject:

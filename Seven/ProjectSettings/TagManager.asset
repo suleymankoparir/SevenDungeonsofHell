@@ -11,6 +11,10 @@ TagManager:
   - Enemies
   - Skill2
   - Skill3
+  - GameSystem
+  - DialogueTrigger
+  - MainSoundManager
+  - Boss
   layers:
   - Default
   - TransparentFX

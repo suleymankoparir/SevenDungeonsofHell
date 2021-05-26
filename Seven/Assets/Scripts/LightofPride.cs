@@ -26,6 +26,12 @@ public class LightofPride : MonoBehaviour
     public void hitEnemy()
     {
         Collider2D[] hitArea = Physics2D.OverlapCircleAll(transform.position, skillDistance, enemyLayer);
+        if (hitArea.Length > 0)
+        {
+            if(FindObjectOfType<MainSoundManager>()!=null)
+                FindObjectOfType<MainSoundManager>().Play("LightofPride");
+        }
+        
         for(int i = 0; i < hitArea.Length; i++)
         {
             button.interactable = false;

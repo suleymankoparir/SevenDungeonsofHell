@@ -171,6 +171,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   anim: {fileID: 6369422366059788722}
+  takeHitAnimation: 1
 --- !u!50 &8867831852311101448
 Rigidbody2D:
   serializedVersion: 4
