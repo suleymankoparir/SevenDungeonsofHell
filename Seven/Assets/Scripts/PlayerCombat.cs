@@ -24,11 +24,13 @@ public class PlayerCombat : MonoBehaviour
     public Transform[] directions;
     PlayerMovement pMovement;
     ControlDisable cd;
+    PassiveRegeneration passiveRegeneration;
     void Start()
     {
         currentHealth = health;
         anim = this.gameObject.GetComponent<Animator>();
         cd =GameObject.FindGameObjectWithTag("GameSystem").GetComponent<ControlDisable>();
+        passiveRegeneration = GetComponent<PassiveRegeneration>();
         pMovement = GetComponent<PlayerMovement>();
         directions = new Transform[4];
         directions[0] = attackPointRight;
@@ -120,6 +122,7 @@ public class PlayerCombat : MonoBehaviour
     public void TakeHit(float damage)
     {
         currentHealth -= damage;
+        passiveRegeneration.takeHitLastTime(Time.time);
         if (currentHealth <= 0&&!dead)
         {
             dead = true;
