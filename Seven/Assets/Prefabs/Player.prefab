@@ -135,11 +135,11 @@ GameObject:
   - component: {fileID: 8133705367589456238}
   - component: {fileID: 9017711039613478376}
   - component: {fileID: 9052109867763231537}
-  - component: {fileID: 3066011261180695768}
   - component: {fileID: 870636008725358669}
   - component: {fileID: 6907753583648272207}
   - component: {fileID: 2950870628671104286}
   - component: {fileID: 9107891463547886063}
+  - component: {fileID: 6853175662352135296}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -318,32 +318,6 @@ MonoBehaviour:
     m_Bits: 64
   lightObject: {fileID: 5516489054971792228, guid: 9e56e0a83cecf49419526138eea684a1, type: 3}
   debug: 0
---- !u!61 &3066011261180695768
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8133705367589456209}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.015437126, y: -0.21611899}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.9230769, y: 1.9230769}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.85765696, y: 1.4133915}
-  m_EdgeRadius: 0
 --- !u!114 &870636008725358669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,3 +382,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b9c8befedcec14388117f326576594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deltaTakeHitTime: 5
+  deltaFastHealingTime: 3
+  fastHealingSpeed: 0.5
+  normalHealingSpeed: 0.1
+--- !u!70 &6853175662352135296
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8133705367589456209}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.05427739, y: 0.06203127}
+  m_Size: {x: 0.6824513, y: 1.7990143}
+  m_Direction: 0

@@ -8,7 +8,7 @@ public class HammerofJustice : MonoBehaviour
     public Button button;
     public float deltatime = 5f;
     float lasttime = 0;
-
+    Animator anim;
     public float skillDistance = 8f;
     public float damage = 100f;
     public LayerMask enemyLayer;
@@ -16,6 +16,7 @@ public class HammerofJustice : MonoBehaviour
     PlayerCombat pCombat;
     private void Start()
     {
+        anim = GetComponent<Animator>();
         pCombat = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>();
         if (!debug && PlayerPrefs.GetInt("Hammer", -1) == -1)
         {
@@ -29,6 +30,11 @@ public class HammerofJustice : MonoBehaviour
             Collider2D[] hit = Physics2D.OverlapCircleAll(transform.position, skillDistance, enemyLayer);
             if (hit.Length > 0)
             {
+                if (FindObjectOfType<MainSoundManager>() != null)
+                    FindObjectOfType<MainSoundManager>().Play("Wrath");
+                anim.SetFloat("AttackVertical", anim.GetFloat("Vertical"));
+                anim.SetFloat("AttackHorizontal", anim.GetFloat("Horizontal"));
+                anim.SetTrigger("Attack");
                 button.interactable = false;
                 lasttime = Time.time;
                 for(int j = 0; j < hit.Length; j++)

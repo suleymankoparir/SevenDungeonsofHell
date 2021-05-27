@@ -15,12 +15,6 @@ public class HealthBarScript : MonoBehaviour
         if (healthSlider != null)
         {
             healthSlider.value = value;
-            Debug.Log(value);
         }      
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

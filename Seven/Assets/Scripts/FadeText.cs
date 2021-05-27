@@ -11,6 +11,7 @@ public class FadeText : MonoBehaviour
     float lasttime=0;
     public float deltaalpha = 0.1f;
     public float visibleTime = 4f;
+    
     void Start()
     {
         txt = GetComponent<Text>();

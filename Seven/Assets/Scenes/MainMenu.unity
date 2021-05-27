@@ -2601,6 +2601,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Wrath
+    clip: {fileID: 8300000, guid: 457fe0d69a941074594b4e4223d8ef1c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   walkSounds:
   - audios:
     - {fileID: 8300000, guid: 30ac421c3ced007419d1525c76bb5057, type: 3}

@@ -32,12 +32,10 @@ public class PassiveRegeneration : MonoBehaviour
             if (pCombat.health <= pCombat.currentHealth + tempHealth)
             {
                 pCombat.currentHealth = pCombat.health;
-                Debug.Log(tempHealth);
             }
             else
             {
                 pCombat.currentHealth += tempHealth;
-                Debug.Log(tempHealth);
             }
         }
     }
