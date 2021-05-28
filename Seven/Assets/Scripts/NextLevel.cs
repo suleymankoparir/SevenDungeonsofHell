@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour
 {
     ControlDisable cDisable;
+    float health, damage;
+    public float[] healthValues;
+    public float[] attackValues;
     void Start()
     {
         cDisable = GameObject.FindGameObjectWithTag("GameSystem").GetComponent<ControlDisable>();
+        health = PlayerPrefs.GetFloat("Health", 200);
+        damage = PlayerPrefs.GetFloat("Attack", 25);
     }
     IEnumerator nextLevelIE()
     {
@@ -28,6 +33,14 @@ public class NextLevel : MonoBehaviour
             if (level == 6)
             {
                 PlayerPrefs.SetInt("Light", 1);
+            }
+            if (health < healthValues[level])
+            {
+                PlayerPrefs.SetFloat("Health", healthValues[level]);
+            }
+            if(damage< attackValues[level])
+            {
+                PlayerPrefs.SetFloat("Attack", attackValues[level]);
             }
             level += 1;
             PlayerPrefs.SetInt("Level", level);

@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606d8fc3804e7cd4b8787ac0557ce99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 80
   currentHealth: 0
   anim: {fileID: 8574470501504289868}
   takeHitAnimation: 0
@@ -200,8 +200,8 @@ MonoBehaviour:
   downPosition: 0.84
   hitDistance: 1.5
   hitRadius: 0.53
-  attackDelay: 0.7
-  damage: 10
+  attackDelay: 2.5
+  damage: 20
   playerMask:
     serializedVersion: 2
     m_Bits: 256

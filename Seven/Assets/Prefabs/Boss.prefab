@@ -201,8 +201,8 @@ MonoBehaviour:
   downPosition: 0.84
   hitDistance: 2.71
   hitRadius: 1.31
-  attackDelay: 0.7
-  damage: 10
+  attackDelay: 2.5
+  damage: 70
   playerMask:
     serializedVersion: 2
     m_Bits: 256

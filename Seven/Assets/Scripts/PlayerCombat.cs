@@ -13,12 +13,14 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPointUp;
     public Transform attackPointDown;
     bool dead=false;
+    [HideInInspector]
     public float health = 100f;
     [HideInInspector]
     public float currentHealth = 100f;
     public float attackRange = 0.5f;
     public float attackDirectionAIRange = 3f;
     public LayerMask enemyLayers;
+    [HideInInspector]
     public float attackDamage = 30f;
     [HideInInspector]
     public Transform[] directions;
@@ -27,6 +29,13 @@ public class PlayerCombat : MonoBehaviour
     PassiveRegeneration passiveRegeneration;
     void Start()
     {
+        ///////////////7
+        health = PlayerPrefs.GetFloat("Health", 200);
+        attackDamage = PlayerPrefs.GetFloat("Attack", 25);
+        Debug.Log("Level " + PlayerPrefs.GetInt("Level", 1));
+        Debug.Log("Can " + health);
+        Debug.Log("Attack " + attackDamage);
+        /////////////
         currentHealth = health;
         anim = this.gameObject.GetComponent<Animator>();
         cd =GameObject.FindGameObjectWithTag("GameSystem").GetComponent<ControlDisable>();

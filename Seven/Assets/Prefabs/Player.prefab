@@ -283,13 +283,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96df6fa94bdeff4cafbdaaf70c27474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deltatime: 0.3
+  deltatime: 0.8
   lasttime: 0
   attackPointLeft: {fileID: 4821882558519145758}
   attackPointRight: {fileID: 4024223557222798059}
   attackPointUp: {fileID: 3888022856815030688}
   attackPointDown: {fileID: 4566121658828974397}
-  health: 100
+  health: 200
   currentHealth: 100
   attackRange: 0.55
   attackDirectionAIRange: 3
@@ -311,8 +311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 0}
-  deltatime: 5
-  damage: 40
+  deltatime: 50
+  damage: 200
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -331,11 +331,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 0}
-  deltatimeButton: 5
+  deltatimeButton: 20
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
-  deltatime: 4
+  deltatime: 3
   debug: 0
 --- !u!114 &6907753583648272207
 MonoBehaviour:
@@ -350,9 +350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 0}
-  deltatime: 5
+  deltatime: 60
   skillDistance: 3.44
-  damage: 100
+  damage: 150
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64

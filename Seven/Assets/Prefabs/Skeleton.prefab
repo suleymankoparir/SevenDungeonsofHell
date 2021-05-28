@@ -316,8 +316,8 @@ MonoBehaviour:
   downPosition: 0.84
   hitDistance: 1.5
   hitRadius: 0.53
-  attackDelay: 0.7
-  damage: 10
+  attackDelay: 1
+  damage: 25
   playerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -335,6 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 6369422366059788722}
+  walkSound: 1
   sightDistance: 12
 --- !u!114 &3941836383250368279
 MonoBehaviour:

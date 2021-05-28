@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606d8fc3804e7cd4b8787ac0557ce99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 50
   currentHealth: 0
   anim: {fileID: 5072617331387991186}
   takeHitAnimation: 1
@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1342098964696194939, guid: a5e23c2cff86f5247a19c1b1405fce11, type: 3}
       propertyPath: summonInOnce
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1342098964696194939, guid: a5e23c2cff86f5247a19c1b1405fce11, type: 3}
       propertyPath: summoned_enemy

@@ -26,7 +26,6 @@ public class PassiveRegeneration : MonoBehaviour
             float tempHealth = normalHealingSpeed;
             if (Time.time < lasttime +deltaTakeHitTime+ deltaFastHealingTime)
             {
-                Debug.Log("girdi");
                 tempHealth = fastHealingSpeed;
             }
             if (pCombat.health <= pCombat.currentHealth + tempHealth)

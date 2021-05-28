@@ -19707,6 +19707,14 @@ PrefabInstance:
       propertyPath: objectiveKill.Array.data[0]
       value: 
       objectReference: {fileID: 1188005043}
+    - target: {fileID: 5822649147972829658, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822649147972829658, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6057251238343631257, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -114.86
@@ -30633,6 +30641,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 537166379}
     m_Modifications:
+    - target: {fileID: 2432067139006190595, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
+      propertyPath: maxHealth
+      value: 1500
+      objectReference: {fileID: 0}
     - target: {fileID: 2432067139006190596, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -30680,6 +30692,10 @@ PrefabInstance:
     - target: {fileID: 2432067139006190620, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
       propertyPath: m_Name
       value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432067139006190621, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
+      propertyPath: damage
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 6598868159576559512, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
       propertyPath: dTrigger
