@@ -5,6 +5,7 @@ using Pathfinding;
 
 public class Enemy : MonoBehaviour
 {
+    public string enemyName="";
     public int maxHealth = 100;
     Transform player;
     public float currentHealth;

@@ -30642,6 +30642,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 537166379}
     m_Modifications:
     - target: {fileID: 2432067139006190595, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
+      propertyPath: enemyName
+      value: Mamon
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432067139006190595, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
       propertyPath: maxHealth
       value: 1500
       objectReference: {fileID: 0}
@@ -30697,6 +30701,10 @@ PrefabInstance:
       propertyPath: damage
       value: 130
       objectReference: {fileID: 0}
+    - target: {fileID: 3050237877734677367, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
+      propertyPath: dt
+      value: 
+      objectReference: {fileID: 567276307}
     - target: {fileID: 6598868159576559512, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
       propertyPath: dTrigger
       value: 
@@ -34358,117 +34366,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &6191707705627001179
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -18.872814
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.4554434
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1357.5599
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193323, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6191707705827193332, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
-      propertyPath: m_Name
-      value: LuciferDialogue_Part1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3c1c50e74391c7445ad026a49d631001, type: 3}
---- !u!1001 &8717219975633783208
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -18.872814
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.4554434
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1357.5599
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554166141824542316, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1585820769842498995, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}
-      propertyPath: m_Name
-      value: LuciferDialogue_Part2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d1547db7138f88c4d9ccc1234f1508eb, type: 3}

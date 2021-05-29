@@ -25043,6 +25043,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 818560096}
     m_Modifications:
     - target: {fileID: 2432067139006190595, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
+      propertyPath: enemyName
+      value: Beelzebub
+      objectReference: {fileID: 0}
+    - target: {fileID: 2432067139006190595, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
       propertyPath: maxHealth
       value: 1000
       objectReference: {fileID: 0}
@@ -25098,6 +25102,10 @@ PrefabInstance:
       propertyPath: damage
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 3050237877734677367, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
+      propertyPath: dt
+      value: 
+      objectReference: {fileID: 892432271}
     - target: {fileID: 6598868159576559512, guid: 774d0950ce1431c499322d1e2c57d653, type: 3}
       propertyPath: dTrigger
       value: 

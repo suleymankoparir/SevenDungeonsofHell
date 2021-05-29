@@ -55,7 +55,7 @@ public class EnemyCombat : MonoBehaviour
             pc.TakeHit(damage);       
         }     
     }
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position - new Vector3(leftPosition, 0, 0), hitRadius);
@@ -64,5 +64,9 @@ public class EnemyCombat : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position + new Vector3(0, downPosition, 0), hitRadius);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, hitDistance);
+    }
+    private void OnDrawGizmos()
+    {
+        
     }
 }

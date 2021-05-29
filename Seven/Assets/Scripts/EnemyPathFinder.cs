@@ -10,6 +10,7 @@ public class EnemyPathFinder : MonoBehaviour
     Transform player;
     public Animator anim;
     public bool walkSound = true;
+    public bool sawPlayer = false;
     float distance;
     public float sightDistance = 50;
     bool _stunned = false;
@@ -41,6 +42,10 @@ public class EnemyPathFinder : MonoBehaviour
             path.canMove = false;
             anim.SetFloat("Speed", 0);
             return;
+        }
+        else
+        {
+            sawPlayer = true;
         }
         if(!_stunned)
             path.canMove = pathfindercontrol.pathFindingActivity;

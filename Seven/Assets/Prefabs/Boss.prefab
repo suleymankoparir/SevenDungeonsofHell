@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1381486137382748900}
   - component: {fileID: 7810536389424042781}
   - component: {fileID: 6598868159576559512}
+  - component: {fileID: 3050237877734677367}
   m_Layer: 6
   m_Name: Boss
   m_TagString: Boss
@@ -53,6 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606d8fc3804e7cd4b8787ac0557ce99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyName: 
   maxHealth: 500
   currentHealth: 0
   anim: {fileID: 5898433734754460068}
@@ -150,7 +152,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 4.5
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -163,7 +165,7 @@ MonoBehaviour:
   rotationSpeed: 32400
   slowdownDistance: 0.6
   pickNextWaypointDist: 1.16
-  endReachedDistance: 1.4
+  endReachedDistance: 1.91
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -201,7 +203,7 @@ MonoBehaviour:
   downPosition: 0.84
   hitDistance: 2.71
   hitRadius: 1.31
-  attackDelay: 2.5
+  attackDelay: 2
   damage: 70
   playerMask:
     serializedVersion: 2
@@ -221,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 5898433734754460068}
   walkSound: 1
+  sawPlayer: 0
   sightDistance: 12
 --- !u!114 &7810536389424042781
 MonoBehaviour:
@@ -248,6 +251,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dTrigger: {fileID: 0}
   tSetter: {fileID: 7810536389424042781}
+--- !u!114 &3050237877734677367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432067139006190620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db096a4f3e1037749a4e59a7b8fc3d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dt: {fileID: 0}
 --- !u!1 &5898433734754460067
 GameObject:
   m_ObjectHideFlags: 0

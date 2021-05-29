@@ -15,6 +15,7 @@ TagManager:
   - DialogueTrigger
   - MainSoundManager
   - Boss
+  - BossHealthBar
   layers:
   - Default
   - TransparentFX

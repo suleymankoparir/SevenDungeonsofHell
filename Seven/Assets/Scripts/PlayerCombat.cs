@@ -29,12 +29,14 @@ public class PlayerCombat : MonoBehaviour
     PassiveRegeneration passiveRegeneration;
     void Start()
     {
-        ///////////////7
+        ///////////////
+        
         health = PlayerPrefs.GetFloat("Health", 200);
         attackDamage = PlayerPrefs.GetFloat("Attack", 25);
         Debug.Log("Level " + PlayerPrefs.GetInt("Level", 1));
         Debug.Log("Can " + health);
         Debug.Log("Attack " + attackDamage);
+        
         /////////////
         currentHealth = health;
         anim = this.gameObject.GetComponent<Animator>();

@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606d8fc3804e7cd4b8787ac0557ce99a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyName: 
   maxHealth: 100
   currentHealth: 0
   anim: {fileID: 6369422366059788722}
@@ -265,7 +266,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 2
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -336,6 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 6369422366059788722}
   walkSound: 1
+  sawPlayer: 0
   sightDistance: 12
 --- !u!114 &3941836383250368279
 MonoBehaviour:
