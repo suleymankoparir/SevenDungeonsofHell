@@ -298,6 +298,9 @@ MonoBehaviour:
     m_Bits: 64
   attackDamage: 30
   directions: []
+  debug: 0
+  parryMin: 0
+  parryMax: 4
 --- !u!114 &9052109867763231537
 MonoBehaviour:
   m_ObjectHideFlags: 0

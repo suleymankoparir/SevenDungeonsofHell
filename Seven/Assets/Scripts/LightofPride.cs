@@ -30,6 +30,7 @@ public class LightofPride : MonoBehaviour
         {
             if(FindObjectOfType<MainSoundManager>()!=null)
                 FindObjectOfType<MainSoundManager>().Play("LightofPride");
+            GetComponent<Animator>().SetTrigger("Light");
         }
         
         for(int i = 0; i < hitArea.Length; i++)

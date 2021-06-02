@@ -58,7 +58,9 @@ MonoBehaviour:
   maxHealth: 500
   currentHealth: 0
   anim: {fileID: 5898433734754460068}
-  takeHitAnimation: 1
+  takeHitAnimation: 0
+  parryMin: 5
+  parryMax: 8
 --- !u!50 &2432067139006190594
 Rigidbody2D:
   serializedVersion: 4

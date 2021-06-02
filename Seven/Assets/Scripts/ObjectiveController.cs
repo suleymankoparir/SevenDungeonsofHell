@@ -15,6 +15,7 @@ public class ObjectiveController : MonoBehaviour
     ObjectiveKillAll objectiveKillAll;
     public ObjectiveKill[] objectiveKill;
     public ObjectiveKillGroup[] objectiveKillGroup;
+    public Font font;
     private void Start()
     {
         if (GetComponent<ObjectiveKillAll>() != null)
@@ -25,16 +26,19 @@ public class ObjectiveController : MonoBehaviour
         {
             killAllText = Instantiate(objective, parent.transform).GetComponent<Text>();
             killAllText.text = objectiveKillAll.objectiveText + " " + objectiveKillAll.aliveEnemy();
+            killAllText.font = font;
         }
         for (int i = 0; i < objectiveKill.Length; i++)
         {
             killTexts.Add(Instantiate(objective, parent.transform).GetComponent<Text>());
             killTexts[i].text = objectiveKill[i].objectiveText;
+            killTexts[i].font = font;
         }
         for (int i = 0; i < objectiveKillGroup.Length; i++)
         {
             groupTexts.Add(Instantiate(objective, parent.transform).GetComponent<Text>());
             groupTexts[i].text = objectiveKillGroup[i].objectiveText +" "+ objectiveKillGroup[i].aliveEnemy().ToString();
+            groupTexts[i].font = font;
         }    
     }
     void FixedUpdate()

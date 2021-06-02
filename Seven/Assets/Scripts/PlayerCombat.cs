@@ -27,16 +27,21 @@ public class PlayerCombat : MonoBehaviour
     PlayerMovement pMovement;
     ControlDisable cd;
     PassiveRegeneration passiveRegeneration;
+    public bool debug = false;
     void Start()
     {
-        ///////////////
-        
         health = PlayerPrefs.GetFloat("Health", 200);
         attackDamage = PlayerPrefs.GetFloat("Attack", 25);
+        ///TEST
+        if (debug)
+        {
+            health = 1000000;
+        }
+        ///
+        ///////////////
         Debug.Log("Level " + PlayerPrefs.GetInt("Level", 1));
         Debug.Log("Can " + health);
         Debug.Log("Attack " + attackDamage);
-        
         /////////////
         currentHealth = health;
         anim = this.gameObject.GetComponent<Animator>();
@@ -48,6 +53,7 @@ public class PlayerCombat : MonoBehaviour
         directions[1] = attackPointUp;
         directions[2] = attackPointDown;
         directions[3] = attackPointRight;
+        
     }
 
     void Update()
@@ -132,11 +138,14 @@ public class PlayerCombat : MonoBehaviour
     }
     public void TakeHit(float damage)
     {
+        Debug.Log("Enemy hit player");
         currentHealth -= damage;
         passiveRegeneration.takeHitLastTime(Time.time);
         if (currentHealth <= 0&&!dead)
         {
             dead = true;
+            anim.SetBool("Death", true);
+            anim.SetTrigger("DeathTrigger");
             StartCoroutine(Die());
         }
     }

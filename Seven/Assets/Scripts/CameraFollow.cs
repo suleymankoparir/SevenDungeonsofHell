@@ -6,6 +6,7 @@ public class CameraFollow : MonoBehaviour
 {
     Transform player;
     Vector3 pos;
+    public float moveSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class CameraFollow : MonoBehaviour
     {
         pos.x = player.position.x;
         pos.y = player.position.y;
-        Camera.main.transform.position = pos;
+        pos.z = transform.position.z;
+        Camera.main.transform.position = Vector3.Lerp(pos,player.position,moveSpeed*Time.deltaTime);
     }
 }

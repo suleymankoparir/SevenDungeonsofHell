@@ -3,7 +3,9 @@ guid: 83189876d4d389f43b7dd2e925aa112e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - DefaultSprite: {instanceID: 0}
+  - DefaultFont: {fileID: 11400000, guid: 23fe0406555054140936dfc813063552, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

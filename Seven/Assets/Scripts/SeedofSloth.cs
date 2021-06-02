@@ -19,6 +19,11 @@ public class SeedofSloth : MonoBehaviour
     {
         stunnedEnemies.Clear();
         Collider2D[] hitArea = Physics2D.OverlapCircleAll(transform.position, skillDistance, enemyLayer);
+        if (hitArea.Length > 0)
+        {
+            GetComponent<Animator>().SetTrigger("Stun");
+        }
+            
         for (int i = 0; i < hitArea.Length; i++)
         {
             button.interactable = false;

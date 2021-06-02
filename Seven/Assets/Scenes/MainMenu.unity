@@ -2607,6 +2607,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Parry
+    clip: {fileID: 8300000, guid: 32079e57053dc26458abe65b58484669, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   walkSounds:
   - audios:
     - {fileID: 8300000, guid: 30ac421c3ced007419d1525c76bb5057, type: 3}

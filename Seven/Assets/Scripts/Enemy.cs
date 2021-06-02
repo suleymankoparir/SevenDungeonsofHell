@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
     public float currentHealth;
     public Animator anim;
     public bool takeHitAnimation = true;
+    public float parryMin = 0;
+    public float parryMax = 0;
     void Start()
     {
         if (takeHitAnimation)
@@ -22,6 +24,19 @@ public class Enemy : MonoBehaviour
     }
     public void takeDamage(float damage)
     {
+        
+        float frame = 0;
+        if (anim.GetCurrentAnimatorClipInfo(0)[0].clip.name.Contains("Attack"))
+        {
+            frame=(anim.GetCurrentAnimatorClipInfo(0)[0].clip.length * (anim.GetCurrentAnimatorStateInfo(0).normalizedTime % 1) * anim.GetCurrentAnimatorClipInfo(0)[0].clip.frameRate);
+            if (frame > parryMin && frame < parryMax)
+            {
+                anim.Play("Attack", 0, 1);
+                if (FindObjectOfType<MainSoundManager>() != null)
+                    FindObjectOfType<MainSoundManager>().Play("Parry");
+                return;
+            }
+        } 
         currentHealth -= damage;
         anim.SetTrigger("TakeHit");
         if (currentHealth <= 0)

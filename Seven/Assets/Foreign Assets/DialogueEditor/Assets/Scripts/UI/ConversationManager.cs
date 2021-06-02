@@ -38,7 +38,6 @@ namespace DialogueEditor
         public Sprite OptionImage;
         public bool OptionImageSliced;
         public bool AllowMouseInteraction;
-
         // Non-User facing 
         // Not exposed via custom inspector
         // 
@@ -58,6 +57,7 @@ namespace DialogueEditor
         public Sprite BlankSprite;
 
         // Getter properties
+        
         public bool IsConversationActive
         {
             get
@@ -480,11 +480,11 @@ namespace DialogueEditor
             // Set font
             if (speech.TMPFont != null)
             {
-                DialogueText.font = speech.TMPFont;
+                //DialogueText.font = speech.TMPFont;
             }
             else
             {
-                DialogueText.font = null;
+               // DialogueText.font = null;
             }
 
             // Set name

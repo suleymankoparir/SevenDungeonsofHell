@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
+using TMPro;
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class DialogueTrigger : MonoBehaviour
     public string PrefName = "Dungeon Code";
     public bool debug = false;
     ControlDisable cd;
+    public TMP_FontAsset font;
     private void Start()
     {
         cd = GameObject.FindGameObjectWithTag("GameSystem").GetComponent<ControlDisable>();
@@ -25,7 +27,7 @@ public class DialogueTrigger : MonoBehaviour
         if (collision.gameObject.tag == "Player" && !enabled_conv&&!ended)
         {
             enabled_conv = true;
-
+            my_conversation.DefaultFont = font;
             ConversationManager.Instance.StartConversation(my_conversation);
             ConversationManager.OnConversationEnded = ConversationEnd;
 
@@ -39,8 +41,9 @@ public class DialogueTrigger : MonoBehaviour
         {
             Debug.Log("dialog baþlatýldý");
             enabled_conv = true;
+            my_conversation.DefaultFont = font;
             ConversationManager.Instance.StartConversation(my_conversation);
-            ConversationManager.OnConversationEnded = ConversationEnd;
+            ConversationManager.OnConversationEnded = ConversationEnd;  
             cd.disableControls();
         }  
     }

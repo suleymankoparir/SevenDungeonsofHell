@@ -123,118 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &14556562
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 14556564}
-  - component: {fileID: 14556563}
-  m_Layer: 0
-  m_Name: SoundManager
-  m_TagString: MainSoundManager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &14556563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14556562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81f63a973aeaa934284cac91e5f11f44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Theme
-    clip: {fileID: 8300000, guid: 3c2b939518a97864fa8968f6247e15d9, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - name: Click
-    clip: {fileID: 8300000, guid: 4d8225bc3d546484b898784a7fd1f031, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: AttackAxe
-    clip: {fileID: 8300000, guid: 96b24775abe5fff41b4200acde855069, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Attack
-    clip: {fileID: 8300000, guid: 4063dcb8b24e4724ea80f5596a796d6a, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Summon
-    clip: {fileID: 8300000, guid: 33247faac30fa0d48b3aab38987e0e13, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: LightofPride
-    clip: {fileID: 8300000, guid: f367834ee18e7f24eaa4e93b805d0203, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Scream
-    clip: {fileID: 8300000, guid: 35a37e2b042e2954195f15f228176597, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Wrath
-    clip: {fileID: 8300000, guid: 457fe0d69a941074594b4e4223d8ef1c, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  walkSounds:
-  - audios:
-    - {fileID: 8300000, guid: 30ac421c3ced007419d1525c76bb5057, type: 3}
-    - {fileID: 8300000, guid: db0e217bbdd6dea4e8b960de3cbf5b04, type: 3}
-    - {fileID: 8300000, guid: 6cd3029f1f3367c4bbca2e6a591ed5dd, type: 3}
-    - {fileID: 8300000, guid: 23ca1fbc389763e42852e66cb6e9bcff, type: 3}
-    - {fileID: 8300000, guid: 4dde9aaad14eec841ba8cfe0397594c2, type: 3}
-    - {fileID: 8300000, guid: 8e43584a525b1fb4f894efb681e2b416, type: 3}
-    - {fileID: 8300000, guid: 28b6544130a75e0449c80a70e988a6e8, type: 3}
-    - {fileID: 8300000, guid: 1d8ff8227070fbe4fb46753c6323dce1, type: 3}
-    - {fileID: 8300000, guid: 88b2db82c9675db468d97370455478d9, type: 3}
-    - {fileID: 8300000, guid: 48ea3d2cdf52ecb409c5892471b6abf5, type: 3}
-    sound:
-      name: Walk
-      clip: {fileID: 0}
-      volume: 0.05
-      pitch: 1
-      loop: 0
-      source: {fileID: 0}
-    counter: 0
---- !u!4 &14556564
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14556562}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.238321, y: -9.279781, z: -1347.6556}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &22723409
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +174,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9275bc1a2965d3643b8d01ba0e7bc3e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25116,6 +25004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8867831852311101462, guid: 4eb4583912aae2f428bca2b3c7a095a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eb4583912aae2f428bca2b3c7a095a1, type: 3}
 --- !u!114 &399601859 stripped
@@ -26081,7 +25973,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9275bc1a2965d3643b8d01ba0e7bc3e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -37310,6 +37202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8867831852311101462, guid: 4eb4583912aae2f428bca2b3c7a095a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eb4583912aae2f428bca2b3c7a095a1, type: 3}
 --- !u!114 &704542831 stripped
@@ -37334,6 +37230,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eda0519ded55a548b1196162d63bb75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1003273510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1003273512}
+  - component: {fileID: 1003273511}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: MainSoundManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1003273511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003273510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f63a973aeaa934284cac91e5f11f44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 3c2b939518a97864fa8968f6247e15d9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Click
+    clip: {fileID: 8300000, guid: 4d8225bc3d546484b898784a7fd1f031, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AttackAxe
+    clip: {fileID: 8300000, guid: 96b24775abe5fff41b4200acde855069, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Attack
+    clip: {fileID: 8300000, guid: 4063dcb8b24e4724ea80f5596a796d6a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Summon
+    clip: {fileID: 8300000, guid: 33247faac30fa0d48b3aab38987e0e13, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LightofPride
+    clip: {fileID: 8300000, guid: f367834ee18e7f24eaa4e93b805d0203, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Scream
+    clip: {fileID: 8300000, guid: 35a37e2b042e2954195f15f228176597, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Wrath
+    clip: {fileID: 8300000, guid: 457fe0d69a941074594b4e4223d8ef1c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Parry
+    clip: {fileID: 8300000, guid: 32079e57053dc26458abe65b58484669, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  walkSounds:
+  - audios:
+    - {fileID: 8300000, guid: 30ac421c3ced007419d1525c76bb5057, type: 3}
+    - {fileID: 8300000, guid: db0e217bbdd6dea4e8b960de3cbf5b04, type: 3}
+    - {fileID: 8300000, guid: 6cd3029f1f3367c4bbca2e6a591ed5dd, type: 3}
+    - {fileID: 8300000, guid: 23ca1fbc389763e42852e66cb6e9bcff, type: 3}
+    - {fileID: 8300000, guid: 4dde9aaad14eec841ba8cfe0397594c2, type: 3}
+    - {fileID: 8300000, guid: 8e43584a525b1fb4f894efb681e2b416, type: 3}
+    - {fileID: 8300000, guid: 28b6544130a75e0449c80a70e988a6e8, type: 3}
+    - {fileID: 8300000, guid: 1d8ff8227070fbe4fb46753c6323dce1, type: 3}
+    - {fileID: 8300000, guid: 88b2db82c9675db468d97370455478d9, type: 3}
+    - {fileID: 8300000, guid: 48ea3d2cdf52ecb409c5892471b6abf5, type: 3}
+    sound:
+      name: Walk
+      clip: {fileID: 0}
+      volume: 0.05
+      pitch: 1
+      loop: 0
+      source: {fileID: 0}
+    counter: 0
+--- !u!4 &1003273512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003273510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.238321, y: -9.279781, z: -1347.6556}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1095439333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6057251238343631257, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
@@ -37550,7 +37564,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9275bc1a2965d3643b8d01ba0e7bc3e0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38365,6 +38379,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1095439333}
+    - target: {fileID: 8867831852311101462, guid: 4eb4583912aae2f428bca2b3c7a095a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eb4583912aae2f428bca2b3c7a095a1, type: 3}
 --- !u!1001 &3006657263302404739
@@ -38520,6 +38538,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1048596940171502264, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048596940171502264, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048596940171502264, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048596940171502264, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2174635028507914888, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: objectiveKillAll
       value: 
@@ -38559,6 +38593,10 @@ PrefabInstance:
     - target: {fileID: 2952684389108203705, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: debug
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952684389108203705, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: deltatimeButton
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4061067836360502029, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: m_RootOrder
@@ -38696,9 +38734,41 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6057251238343631257, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -146.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057251238343631257, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -95.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6444820316157510597, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: debug
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444820316157510597, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: deltatime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6470067863915351324, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: debug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092518425533441044, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092518425533441044, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092518425533441044, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092518425533441044, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8632334383572074076, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: m_AnchorMax.y
@@ -38719,6 +38789,10 @@ PrefabInstance:
     - target: {fileID: 8877247226172573627, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: debug
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8877247226172573627, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: deltatime
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4512003770479769809, guid: f7542966ed76532488184aec5cffa3c1, type: 3}

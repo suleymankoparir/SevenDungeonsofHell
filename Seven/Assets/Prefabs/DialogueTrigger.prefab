@@ -45,9 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   my_conversation: {fileID: 0}
+  enabled_conv: 0
   ended: 0
   PrefName: Dungeon Code
   debug: 0
+  font: {fileID: 11400000, guid: 23fe0406555054140936dfc813063552, type: 2}
 --- !u!61 &6774505529721747176
 BoxCollider2D:
   m_ObjectHideFlags: 0

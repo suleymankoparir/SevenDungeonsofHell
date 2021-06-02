@@ -3,7 +3,10 @@ guid: 00abedce3cdbbba46bf2d86c9518c9f0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - TMPFont: {fileID: 11400000, guid: 23fe0406555054140936dfc813063552, type: 2}
+  - Icon: {instanceID: 0}
+  - Audio: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
