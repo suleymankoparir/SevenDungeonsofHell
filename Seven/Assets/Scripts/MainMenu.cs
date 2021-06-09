@@ -22,6 +22,12 @@ public class MainMenu : MonoBehaviour
             txt.color = temp;
             continueButton.interactable=false;
         }
+        float savedVolume = PlayerPrefs.GetFloat("Volume", -1);
+        if (savedVolume != -1)
+        {
+            slider.value = savedVolume;
+            volumeChange();
+        }
     }
     public void newGame()
     {

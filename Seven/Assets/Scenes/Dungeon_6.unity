@@ -19707,6 +19707,18 @@ PrefabInstance:
       propertyPath: objectiveKill.Array.data[0]
       value: 
       objectReference: {fileID: 1188005043}
+    - target: {fileID: 4570294434600374844, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.02745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4570294434600374844, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.02745098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4570294434600374844, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.02745098
+      objectReference: {fileID: 0}
     - target: {fileID: 5822649147972829658, guid: f7542966ed76532488184aec5cffa3c1, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

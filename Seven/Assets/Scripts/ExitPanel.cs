@@ -13,12 +13,16 @@ public class ExitPanel : MonoBehaviour
     }
     public void continueButton()
     {
+        if (FindObjectOfType<MainSoundManager>() != null)
+            FindObjectOfType<MainSoundManager>().Play("Click");
         if (dTrigger == null || !dTrigger.enabled_conv || !dTrigger.isActiveAndEnabled)
             cd.enableControls();
         this.gameObject.SetActive(false);
     }
     public void exitButton()
     {
+        if (FindObjectOfType<MainSoundManager>() != null)
+            FindObjectOfType<MainSoundManager>().Play("Click");
         Application.Quit();
     }
 }

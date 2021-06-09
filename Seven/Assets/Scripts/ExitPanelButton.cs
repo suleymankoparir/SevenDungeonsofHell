@@ -15,7 +15,9 @@ public class ExitPanelButton : MonoBehaviour
     }
     public void buttonPressed()
     {
-        if(dTrigger==null|| !dTrigger.enabled_conv||!dTrigger.isActiveAndEnabled)
+        if (FindObjectOfType<MainSoundManager>() != null)
+            FindObjectOfType<MainSoundManager>().Play("Click");
+        if (dTrigger==null|| !dTrigger.enabled_conv||!dTrigger.isActiveAndEnabled)
              cd.disableControls();
         panel.SetActive(true);
     }
